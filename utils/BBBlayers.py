@@ -85,7 +85,8 @@ class _ConvNd(nn.Module):
         #self.qb_logvar.data.uniform_(-stdv, stdv).add_(self.q_logvar_init)
         self.conv_qw_mean.data.uniform_(-stdv, stdv)
         self.conv_qw_logvar.data.uniform_(-stdv, stdv).add_(self.q_logvar_init)
-        self.log_alpha.data.fill_(-5.0)
+        #self.log_alpha.data.fill_(-5.0)
+        self.log_alpha.data.uniform_(-stdv, stdv)
 
     def extra_repr(self):
         s = ('{in_channels}, {out_channels}, kernel_size={kernel_size}'
@@ -125,18 +126,15 @@ class BBBConv2d(_ConvNd):
         """
 
         # local reparameterization trick for convolutional layer
-        # the inverse of alpha is variance, alpha is precision
-
-        # log_alpha = self.qw_logvar - torch.log(self.qw_mean.pow(2) + 1e-8)
-
         conv_qw_mean = F.conv2d(input=input, weight=self.qw_mean, stride=self.stride, padding=self.padding,
                                 dilation=self.dilation, groups=self.groups)
-        conv_qw_logvar = torch.sqrt(1e-8 + F.conv2d(input=input.pow(2), weight=torch.exp(self.log_alpha)*self.qw_mean.pow(2),
+        conv_qw_logvar = torch.sqrt(1e-8 + F.conv2d(input=input.pow(2), weight=self.log_alpha*self.qw_mean.pow(2),
                                                     stride=self.stride, padding=self.padding, dilation=self.dilation, groups=self.groups))
 
         if cuda:
             conv_qw_mean.cuda()
             conv_qw_logvar.cuda()
+
         # sample from output
         if cuda:
             output = conv_qw_mean + conv_qw_logvar * (torch.randn(conv_qw_mean.size())).cuda()
@@ -169,8 +167,8 @@ class BBBLinearFactorial(nn.Module):
         # q_logvar_init: float, the approximate posterior is currently always a factorized gaussian
         super(BBBLinearFactorial, self).__init__()
 
-        self.in_features   = in_features
-        self.out_features  = out_features
+        self.in_features = in_features
+        self.out_features = out_features
         self.p_logvar_init = p_logvar_init
         self.q_logvar_init = q_logvar_init
 
@@ -220,19 +218,19 @@ class BBBLinearFactorial(nn.Module):
         :param MAP: boolean whether to take the MAP estimate.
         :return: output, kl-divergence
         """
-        #log_alpha = self.qw_logvar - torch.log(self.qw_mean.pow(2) + 1e-8)
 
         fc_qw_mean = F.linear(input=input, weight=self.qw_mean)
-        fc_qw_var = torch.sqrt(1e-8 + F.linear(input=input.pow(2), weight=torch.exp(self.log_alpha)*self.qw_mean.pow(2)))
+        fc_qw_logvar = torch.sqrt(1e-8 + F.linear(input=input.pow(2), weight=self.log_alpha*self.qw_mean.pow(2)))
 
         if cuda:
             fc_qw_mean.cuda()
-            fc_qw_var.cuda()
+            fc_qw_logvar.cuda()
+
         # sample from output
         if cuda:
-            output = fc_qw_mean + fc_qw_var * (torch.randn(fc_qw_mean.size())).cuda()
+            output = fc_qw_mean + fc_qw_logvar * (torch.randn(fc_qw_mean.size())).cuda()
         else:
-            output = fc_qw_mean + fc_qw_var * (torch.randn(fc_qw_mean.size()))
+            output = fc_qw_mean + fc_qw_logvar * (torch.randn(fc_qw_mean.size()))
 
         if cuda:
             output.cuda()
