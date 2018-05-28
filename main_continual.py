@@ -31,8 +31,8 @@ net = BBBLeNet   # LeNet or AlexNet
 num_epochs = 100
 p_logvar_init = 0
 q_logvar_init = -10
-lr = 1e-5
-weight_decay = 0.0005
+lr = 0.005
+weight_decay = 0
 
 
 # number of possible output classes
@@ -41,12 +41,17 @@ if net is BBBLeNet:    # train with MNIST
 elif net is BBBAlexNet:    # train with CIFAR-100
     outputs = 100
 
+if net is BBBLeNet:
+    resize = 32
+elif net is BBBAlexNet:
+    resize = 227
+
 '''
 LOADING DATASET
 '''
 
 if net is BBBLeNet:
-    transform = transforms.Compose([transforms.Resize((32, 32)), transforms.ToTensor(),
+    transform = transforms.Compose([transforms.Resize((resize, resize)), transforms.ToTensor(),
                                     transforms.Normalize((0.1307,), (0.3081,)),
                                     transforms.Lambda(lambda x: x + noise * torch.randn(x.size()))])
     train_dataset = dsets.MNIST(root="data", download=True,
@@ -54,7 +59,7 @@ if net is BBBLeNet:
     val_dataset = dsets.MNIST(root="data", download=True, train=False,
                               transform=transform)
 elif net is BBBAlexNet:
-    transform = transforms.Compose([transforms.Resize((227, 227)), transforms.ToTensor(),
+    transform = transforms.Compose([transforms.Resize((resize, resize)), transforms.ToTensor(),
                                     transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
                                     transforms.Lambda(lambda x: x + noise * torch.randn(x.size()))])
     train_dataset = dsets.CIFAR100(root="data", download=True, transform=transform)
