@@ -4,7 +4,7 @@ from .BBBlayers import BBBConv2d, BBBLinearFactorial, FlattenLayer
 
 
 class BBBAlexNet(nn.Module):
-    def __init__(self, num_tasks):
+    def __init__(self, outputs):
         # create AlexNet with probabilistic weights
         super(BBBAlexNet, self).__init__()
 
@@ -45,7 +45,7 @@ class BBBAlexNet(nn.Module):
         self.drop2 = nn.Dropout()
         self.fc2 = BBBLinearFactorial(4096, 4096)
         self.relu2 = nn.ReLU(inplace=True)
-        self.fc3 = BBBLinearFactorial(4096, num_tasks)
+        self.fc3 = BBBLinearFactorial(4096, outputs)
 
         layers = [self.conv1, self.conv1a, self.conv2, self.conv2a, self.conv3, self.conv3a, self.conv4, self.conv4a,
                   self.conv5, self.conv5a, self.flatten, self.drop1, self.fc1, self.relu1, self.drop2, self.fc2, self.relu2, self.fc3]
@@ -85,7 +85,7 @@ class BBBAlexNet(nn.Module):
 
 
 class BBBLeNet(nn.Module):
-    def __init__(self, num_tasks):
+    def __init__(self, outputs):
         super(BBBLeNet, self).__init__()
         self.conv1 = BBBConv2d(1, 6, 5, stride=1)
         self.relu1 = nn.ReLU(inplace=True)
@@ -102,7 +102,7 @@ class BBBLeNet(nn.Module):
         self.fc2 = BBBLinearFactorial(120, 84)
         self.relu4 = nn.ReLU()
 
-        self.fc3 = BBBLinearFactorial(84, num_tasks)
+        self.fc3 = BBBLinearFactorial(84, outputs)
 
         layers = [self.conv1, self.relu1, self.pool1, self.conv2, self.relu2, self.pool2,
                   self.flatten, self.fc1, self.relu3, self.fc2, self.relu4, self.fc3]

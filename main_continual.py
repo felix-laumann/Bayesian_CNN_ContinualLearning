@@ -11,40 +11,45 @@ from utils.BBBlayers import GaussianVariationalInference
 cuda = torch.cuda.is_available()
 
 '''
-MODEL HYPERPARAMETERS
+HYPERPARAMETERS
 '''
 save_model = True
 is_training = True  # set to "False" for evaluation of network ability to remember previous tasks
 pretrained = False  # change pretrained to "True" for continual learning
+task = 1  #
+noise = 0  # add extent of Gaussian noise
 num_samples = 10  # because of Casper's trick
 batch_size = 32
 beta_type = "Blundell"
-net = BBBAlexNet   # LeNet or AlexNet
+net = BBBLeNet   # LeNet or AlexNet
 num_epochs = 100
 p_logvar_init = 0
 q_logvar_init = -10
 lr = 1e-5
-weight_decay = 0.0005
+weight_decay = 0
 
-# number of tasks, i.e. possible output classes
+
+# number of possible output classes
 if net is BBBLeNet:    # train with MNIST
-    task_num = 10
+    outputs = 10
 elif net is BBBAlexNet:    # train with CIFAR-100
-    task_num = 100
+    outputs = 100
 
 '''
 LOADING DATASET
 '''
 
-transform = transforms.Compose([transforms.Resize((227, 227)), transforms.ToTensor(),
-                                transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
-
 if net is BBBLeNet:
+    transform = transforms.Compose([transforms.Resize((32, 32)), transforms.ToTensor(),
+                                    transforms.Lambda(lambda x: x + noise * torch.randn(x.size()))])
     train_dataset = dsets.MNIST(root="data", download=True,
-                                transform=transforms.Compose([transforms.Resize((32, 32)), transforms.ToTensor()]))
+                                transform=transform)
     val_dataset = dsets.MNIST(root="data", download=True, train=False,
-                              transform=transforms.Compose([transforms.Resize((32, 32)), transforms.ToTensor()]))
+                              transform=transform)
 elif net is BBBAlexNet:
+    transform = transforms.Compose([transforms.Resize((227, 227)), transforms.ToTensor(),
+                                    transforms.Lambda(lambda x: x + noise * torch.randn(x.size())),
+                                    transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
     train_dataset = dsets.CIFAR100(root="data", download=True, transform=transform)
     val_dataset = dsets.CIFAR100(root='data', download=True, train=False, transform=transform)
 
@@ -63,12 +68,12 @@ loader_val = data.DataLoader(dataset=val_dataset, batch_size=batch_size, shuffle
 
 
 # enable loading of weights to transfer learning
-def cnnmodel(pretrained):
-    model = net(num_tasks=task_num)
+def cnnmodel(pretrained, task):
+    model = net(outputs=outputs)
 
     if pretrained:
         # load pretrained prior distribution of one class (e.g. cup)
-        with open("~/weights.pkl", "rb") as previous:
+        with open("~/weights_{}.pkl".format(task-1), "rb") as previous:
             d = torch.load(previous)
             model.load_prior(d)
 
@@ -79,7 +84,7 @@ def cnnmodel(pretrained):
 INSTANTIATE MODEL
 '''
 
-model = cnnmodel(pretrained=pretrained)
+model = cnnmodel(pretrained=pretrained, task=task)
 
 if cuda:
     model.cuda()
@@ -189,5 +194,5 @@ SAVE PARAMETERS
 '''
 
 if save_model is True:
-    torch.save(model.state_dict(), "weights.pkl")
+    torch.save(model.state_dict(), "weights_{}.pkl".format(task))
 
