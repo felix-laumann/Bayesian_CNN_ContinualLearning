@@ -32,7 +32,7 @@ num_epochs = 100
 p_logvar_init = 0
 q_logvar_init = -10
 lr = 0.005
-weight_decay = 0
+weight_decay = 0.0005
 
 
 # number of possible output classes

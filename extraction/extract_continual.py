@@ -1,3 +1,4 @@
+import os
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -5,32 +6,44 @@ plt.style.use("seaborn")
 import seaborn as sns
 import re
 import numpy as np
-plt.rc('text', usetex=True)
-plt.rc('font', family='serif', size=34)
-plt.rcParams.update({'xtick.labelsize': 34, 'ytick.labelsize': 34, 'axes.labelsize': 34})
+plt.rc('font', family='serif', size=16)
+plt.rcParams.update({'xtick.labelsize': 16, 'ytick.labelsize': 16, 'axes.labelsize': 16})
 
 tasks = 2  # tasks continually learnt
 
 
-def load_data(task):
-    files = [open("diagnostics_{}.txt".format(task)).read() for task in range(task)]
-    
-    accuracies = [list(map(lambda x: x.split(" ")[-1], re.findall(r"(\'acc\': \d.\d+)", file))) for file in files]
-    valid = [acc[1::2] for acc in accuracies]
+def load_data(tasks):
+    os.chdir("/home/felix/Dropbox/publications/Bayesian_CNN_continual/results/")
+    files = [open("diagnostics_{}.txt".format(task)).read() for task in range(tasks)]
 
-    return np.array(valid).astype(np.float32)
+    for file in files:
+        with open(file, 'r') as f:
+            acc = re.findall(r"'acc':\s+tensor\((.*?)\)", f.read())
+        print(acc)
+
+        train[file] = acc[0::2]
+        valid[file] = acc[1::2]
+
+        return np.array(train).astype(np.float32), np.array(valid).astype(np.float32)
 
 
-f = plt.figure(figsize=(15, 15))
+f = plt.figure(figsize=(10, 8))
 colors = sns.color_palette(n_colors=tasks)
 
-current_palette = sns.color_palette()
-vt = load_data(task=tasks)
-x_ticks = range(vt.shape[1])
+train, valid = load_data(tasks=tasks)
+
+print(valid)
+
+plt.plot(valid, "--", label=r"Validation, prior: $U(a, b)$", color='maroon')
+#plt.plot(i, valid, "--", label=r"Validation, prior: $q(w | \theta_A)$", color='navy')
+
 
 plt.xlabel("Epochs")
 plt.ylabel("Accuracy")
+x_ticks = range(len(valid.shape[1]))
+plt.xticks(x_ticks[9::10], map(lambda x: x+1, x_ticks[9::10]))
 
-plt.xticks(x_ticks[9::10], map(lambda x: x + 1, x_ticks[9::10]))
 f.suptitle("Evaluating continual learning")
-plt.savefig("figures/results.png")
+plt.legend()
+
+plt.savefig("results_continual.png")
