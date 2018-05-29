@@ -4,12 +4,12 @@ from .BBBlayers import BBBConv2d, BBBLinearFactorial, FlattenLayer
 
 
 class BBBAlexNet(nn.Module):
-    def __init__(self, outputs):
+    def __init__(self, outputs, inputs):
         # create AlexNet with probabilistic weights
         super(BBBAlexNet, self).__init__()
 
         # FEATURES
-        self.conv1 = BBBConv2d(3, 64, kernel_size=11, stride=4, padding=2)
+        self.conv1 = BBBConv2d(inputs, 64, kernel_size=11, stride=4, padding=2)
         self.conv1a = nn.Sequential(
             nn.Softplus(),
             # nn.BatchNorm2d(64),
@@ -85,12 +85,9 @@ class BBBAlexNet(nn.Module):
 
 
 class BBBLeNet(nn.Module):
-    def __init__(self, outputs, dataset):
+    def __init__(self, outputs, inputs):
         super(BBBLeNet, self).__init__()
-        if dataset is 'MNIST':
-            self.conv1 = BBBConv2d(1, 6, 5, stride=1)
-        elif dataset is 'CIFAR-100':
-            self.conv1 = BBBConv2d(3, 6, 5, stride=1)
+        self.conv1 = BBBConv2d(inputs, 6, 5, stride=1)
         self.relu1 = nn.Softplus()
         self.pool1 = nn.MaxPool2d(kernel_size=2, stride=2)
 

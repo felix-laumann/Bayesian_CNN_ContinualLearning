@@ -85,7 +85,6 @@ class _ConvNd(nn.Module):
         #self.qb_logvar.data.uniform_(-stdv, stdv).add_(self.q_logvar_init)
         self.conv_qw_mean.data.uniform_(-stdv, stdv)
         self.conv_qw_si.data.uniform_(-stdv, stdv).add_(self.q_logvar_init)
-        #self.log_alpha.data.fill_(-5.0)
         self.log_alpha.data.uniform_(-stdv, stdv)
 
     def extra_repr(self):
