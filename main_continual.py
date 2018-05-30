@@ -1,4 +1,5 @@
 import math
+import pickle
 import torch
 import torch.cuda
 import torchvision.transforms as transforms
@@ -15,7 +16,7 @@ HYPERPARAMETERS
 '''
 save_model = True
 is_training = True  # set to "False" for evaluation of network ability to remember previous tasks
-pretrained = False  # change pretrained to "True" for continual learning
+pretrained = True  # change pretrained to "True" for continual learning
 
 if pretrained is False:
     task = 1
@@ -88,9 +89,9 @@ def cnnmodel(pretrained, task):
     model = net(outputs=outputs, inputs=inputs)
 
     if pretrained:
-        # load pretrained prior distribution of one class (e.g. cup)
+        # load pretrained posterior distribution of one task as prior of next task
         with open("~/weights_{}.pkl".format(task-1), "rb") as previous:
-            d = torch.load(previous)
+            d = pickle.load(previous)
             model.load_prior(d)
 
     return model
@@ -210,5 +211,6 @@ SAVE PARAMETERS
 '''
 
 if save_model is True:
-    torch.save(model.state_dict(), "weights_{}.pkl".format(task))
+    with open("weights_{}.pkl".format(task), "wb") as wf:
+        pickle.dump(model.state_dict(), wf)
 
