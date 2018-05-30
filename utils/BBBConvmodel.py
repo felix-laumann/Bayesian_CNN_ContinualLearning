@@ -125,6 +125,7 @@ class BBBLeNet(nn.Module):
         print('logits', logits)
         return logits, kl
 
+    # load priors for continual tasks
     def load_prior(self, state_dict):
         d_q = {k: v for k, v in state_dict.items() if "q" in k}
         for i, layer in enumerate(self.layers):
