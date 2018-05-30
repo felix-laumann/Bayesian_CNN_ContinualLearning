@@ -90,7 +90,6 @@ def cnnmodel(pretrained, task):
 
     if pretrained:
         # load pretrained posterior distribution of one task as prior of next task
-        #os.chdir("~/results/")
         with open("results/weights_{}.pkl".format(task-1), "rb") as previous:
             d = pickle.load(previous)
             model.load_prior(d)
