@@ -21,8 +21,8 @@ def load_data(tasks):
             acc = re.findall(r"'acc':\s+tensor\((.*?)\)", f.read())
         print(acc)
 
-        train[file] = acc[0::2]
-        valid[file] = acc[1::2]
+        train[file] = acc[1::2]
+        valid[file] = acc[0::2]
 
         return np.array(train).astype(np.float32), np.array(valid).astype(np.float32)
 
