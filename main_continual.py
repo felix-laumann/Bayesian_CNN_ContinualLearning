@@ -89,10 +89,16 @@ def cnnmodel(pretrained, task):
     model = net(outputs=outputs, inputs=inputs)
 
     if pretrained:
-        # load pretrained posterior distribution of one task as prior of next task
-        with open("results/weights_{}.pkl".format(task-1), "rb") as previous:
-            d = pickle.load(previous)
-            model.load_prior(d)
+        if is_training:
+            # load pretrained posterior distribution of one task as prior of next task
+            with open("results/weights_{}.pkl".format(task-1), "rb") as previous:
+                d = pickle.load(previous)
+                model.load_prior(d)
+        else:
+            # evaluate accuracy of previous task
+            with open("results/weights_{}.pkl".format(task), "rb") as previous:
+                d = pickle.load(previous)
+                model.load_prior(d)
 
     return model
 
@@ -138,6 +144,8 @@ def run_epoch(loader, epoch, is_training=False):
     likelihoods = []
     kls = []
     losses = []
+    W_fc = []
+    W_conv = []
 
     for i, (images, labels) in enumerate(loader):
         # Repeat samples (Casper's trick)
@@ -172,16 +180,22 @@ def run_epoch(loader, epoch, is_training=False):
 
         _, predicted = logits.max(1)
         accuracy = (predicted.data.cpu() == y.cpu()).float().mean()
+        w_fc2 = torch.sum(model.fc2.weight.data)
+        w_conv2 = torch.sum(model.conv2.weight.data)
 
         accuracies.append(accuracy)
         losses.append(loss.data.mean())
         kls.append(beta*kl.data.mean())
         likelihoods.append(ll)
+        W_fc.append(w_fc2)
+        W_conv.append(w_conv2)
 
     diagnostics = {'loss': sum(losses)/len(losses),
                    'acc': sum(accuracies)/len(accuracies),
                    'kl': sum(kls)/len(kls),
-                   'likelihood': sum(likelihoods)/len(likelihoods)}
+                   'likelihood': sum(likelihoods)/len(likelihoods),
+                   'weight_fc': W_fc,
+                   'weight_conv': W_conv}
 
     return diagnostics
 
@@ -210,7 +224,8 @@ for epoch in range(num_epochs):
 SAVE PARAMETERS
 '''
 
-if save_model is True:
-    with open("weights_{}.pkl".format(task), "wb") as wf:
-        pickle.dump(model.state_dict(), wf)
+if save_model:
+    if is_training:
+        with open("weights_{}.pkl".format(task), "wb") as wf:
+            pickle.dump(model.state_dict(), wf)
 
