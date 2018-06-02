@@ -132,7 +132,11 @@ for i in range(len(list(model.parameters()))):
 TRAIN MODEL
 '''
 
-logfile = os.path.join('diagnostics_{}.txt'.format(task))
+if is_training:
+    logfile = os.path.join('diagnostics_{}.txt'.format(task))
+else:
+    logfile = os.path.join('diagnostics_{}_eval.txt'.format(task))
+
 with open(logfile, 'w') as lf:
     lf.write('')
 
