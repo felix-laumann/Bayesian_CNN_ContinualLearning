@@ -50,7 +50,12 @@ class BBBAlexNet(nn.Module):
         layers = [self.conv1, self.conv1a, self.conv2, self.conv2a, self.conv3, self.conv3a, self.conv4, self.conv4a,
                   self.conv5, self.conv5a, self.flatten, self.drop1, self.fc1, self.relu1, self.drop2, self.fc2, self.relu2, self.fc3]
 
+        layers_cont = [self.conv1, self.conv1a, self.conv2, self.conv2a, self.conv3, self.conv3a, self.conv4, self.conv4a,
+                       self.conv5, self.conv5a, self.flatten, self.drop1, self.fc1, self.relu1, self.drop2, self.fc2,
+                       self.relu2]
+
         self.layers = nn.ModuleList(layers)
+        self.layers_cont = nn.ModuleList(layers_cont)
 
     def probforward(self, x):
         kl = 0
@@ -70,7 +75,7 @@ class BBBAlexNet(nn.Module):
 
     def load_prior(self, state_dict):
         d_q = {k: v for k, v in state_dict.items() if "q" in k}
-        for i, layer in enumerate(self.layers):
+        for i, layer in enumerate(self.layers_cont):
             if type(layer) is BBBConv2d:
                 layer.pw = Normal(mu=d_q["layers.{}.qw_mean".format(i)],
                                   logvar=d_q["layers.{}.qw_logvar".format(i)])
@@ -107,7 +112,11 @@ class BBBLeNet(nn.Module):
         layers = [self.conv1, self.relu1, self.pool1, self.conv2, self.relu2, self.pool2,
                   self.flatten, self.fc1, self.relu3, self.fc2, self.relu4, self.fc3]
 
+        layers_cont = [self.conv1, self.relu1, self.pool1, self.conv2, self.relu2, self.pool2,
+                       self.flatten, self.fc1, self.relu3, self.fc2, self.relu4]
+
         self.layers = nn.ModuleList(layers)
+        self.layers_cont = nn.ModuleList(layers_cont)
 
     def probforward(self, x):
         kl = 0
@@ -128,11 +137,10 @@ class BBBLeNet(nn.Module):
     # load priors for continual tasks
     def load_prior(self, state_dict):
         d_q = {k: v for k, v in state_dict.items() if "q" in k}
-        for i, layer in enumerate(self.layers): # and is not self.fc3:
+        for i, layer in enumerate(self.layers_cont):
             if type(layer) is BBBConv2d:
                 layer.pw = Normal(mu=d_q["layers.{}.qw_mean".format(i)],
                                   logvar=d_q["layers.{}.qw_logvar".format(i)])
-                #layer.pb = Normal(mu=(d_q["layers.{}.qb_mean".format(i)]), logvar=(d_q["layers.{}.qb_logvar".format(i)]))
 
             elif type(layer) is BBBLinearFactorial:
                 layer.pw = Normal(mu=(d_q["layers.{}.qw_mean".format(i)]),
