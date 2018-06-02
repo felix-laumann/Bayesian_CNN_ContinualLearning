@@ -148,8 +148,10 @@ def run_epoch(loader, epoch, is_training=False):
     likelihoods = []
     kls = []
     losses = []
-    W_fc = []
-    W_conv = []
+    mean_fc = []
+    var_fc = []
+    mean_conv = []
+    var_conv = []
 
     for i, (images, labels) in enumerate(loader):
         # Repeat samples (Casper's trick)
@@ -184,22 +186,26 @@ def run_epoch(loader, epoch, is_training=False):
 
         _, predicted = logits.max(1)
         accuracy = (predicted.data.cpu() == y.cpu()).float().mean()
-        w_fc2 = torch.sum(model.fc2.weight.data)
-        w_conv2 = torch.sum(model.conv2.weight.data)
+        mean_fc2 = model.fc2.qw_mean.data
+        var_fc2 = model.fc2.qw_logvar.data
+        mean_conv2 = model.conv2.qw_mean.data
+        var_conv2 = model.conv2.qw_logvar.data
 
         accuracies.append(accuracy)
         losses.append(loss.data.mean())
         kls.append(beta*kl.data.mean())
         likelihoods.append(ll)
-        W_fc.append(w_fc2)
-        W_conv.append(w_conv2)
+        mean_fc.append(mean_fc2)
+        var_fc.append(var_fc2)
+        mean_conv.append(mean_conv2)
+        var_conv.append(var_conv2)
 
     diagnostics = {'loss': sum(losses)/len(losses),
                    'acc': sum(accuracies)/len(accuracies),
                    'kl': sum(kls)/len(kls),
                    'likelihood': sum(likelihoods)/len(likelihoods),
-                   'weight_fc': W_fc,
-                   'weight_conv': W_conv}
+                   'mean_fc': mean_fc, 'var_fc': var_fc,
+                   'mean_conv': mean_conv, 'var_conv': var_conv}
 
     return diagnostics
 
