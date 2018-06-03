@@ -112,8 +112,7 @@ class BBBLeNet(nn.Module):
         layers = [self.conv1, self.relu1, self.pool1, self.conv2, self.relu2, self.pool2,
                   self.flatten, self.fc1, self.relu3, self.fc2, self.relu4, self.fc3]
 
-        layers_cont = [self.conv1, self.relu1, self.pool1, self.conv2, self.relu2, self.pool2,
-                       self.flatten, self.fc1, self.relu3, self.fc2, self.relu4]
+        layers_cont = [self.conv1, self.relu1, self.pool1, self.conv2, self.relu2, self.pool2]
 
         self.layers = nn.ModuleList(layers)
         self.layers_cont = nn.ModuleList(layers_cont)

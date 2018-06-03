@@ -15,15 +15,15 @@ tasks = 2  # tasks continually learnt
 def load_data(tasks):
     os.chdir("/home/felix/Dropbox/publications/Bayesian_CNN_continual/results/")
 
-    for task in range(1, tasks):
+    for task in range(1, tasks+1):
         with open("diagnostics_{}.txt".format(task), 'r') as file:
             acc = re.findall(r"'acc':\s+tensor\((.*?)\)", file.read())
-        print(acc)
+            print(acc)
 
         train = acc[1::2]
         valid = acc[0::2]
 
-        return np.array(train).astype(np.float32), np.array(valid).astype(np.float32)
+    return np.array(train).astype(np.float32), np.array(valid).astype(np.float32)
 
 
 f = plt.figure(figsize=(10, 8))
