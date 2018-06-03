@@ -51,8 +51,7 @@ class BBBAlexNet(nn.Module):
                   self.conv5, self.conv5a, self.flatten, self.drop1, self.fc1, self.relu1, self.drop2, self.fc2, self.relu2, self.fc3]
 
         layers_cont = [self.conv1, self.conv1a, self.conv2, self.conv2a, self.conv3, self.conv3a, self.conv4, self.conv4a,
-                       self.conv5, self.conv5a, self.flatten, self.drop1, self.fc1, self.relu1, self.drop2, self.fc2,
-                       self.relu2]
+                       self.conv5, self.conv5a]
 
         self.layers = nn.ModuleList(layers)
         self.layers_cont = nn.ModuleList(layers_cont)
