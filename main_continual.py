@@ -16,7 +16,7 @@ HYPERPARAMETERS
 '''
 save_model = True
 is_training = True  # set to "False" for evaluation of network ability to remember previous tasks
-pretrained = True  # change pretrained to "True" for continual learning
+pretrained = False  # change pretrained to "True" for continual learning
 
 if pretrained is False:
     task = 1
@@ -33,7 +33,7 @@ dataset = 'MNIST'  # MNIST or CIFAR-100
 num_epochs = 100
 p_logvar_init = 0
 q_logvar_init = -10
-lr = 0.005
+lr = 0.00001
 weight_decay = 0.0005
 
 
