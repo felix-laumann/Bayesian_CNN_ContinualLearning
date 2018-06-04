@@ -14,7 +14,6 @@ cuda = torch.cuda.is_available()
 '''
 HYPERPARAMETERS
 '''
-save_model = True
 is_training = True  # set to "False" for evaluation of network ability to remember previous tasks
 pretrained = False  # change pretrained to "True" for continual learning
 
@@ -23,7 +22,7 @@ if pretrained is False:
     noise = 0
 elif pretrained is True:
     task = 2  # change to 3, 4, 5, etc. for more tasks
-    noise = 0.25  # add extent of Gaussian noise
+    noise = 0.025  # add extent of Gaussian noise
 
 num_samples = 10  # because of Casper's trick
 batch_size = 32
@@ -223,8 +222,8 @@ for epoch in range(num_epochs):
 SAVE PARAMETERS
 '''
 
-if save_model:
-    if is_training:
-        with open("/results/weights_{}.pkl".format(task), "wb") as wf:
-            pickle.dump(model.state_dict(), wf)
+if is_training:
+    weightsfile = os.path.join("/results/weights_{}.pkl".format(task))
+    with open(weightsfile, "wb") as wf:
+        pickle.dump(model.state_dict(), wf)
 
