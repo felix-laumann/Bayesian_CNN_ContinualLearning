@@ -216,7 +216,7 @@ SAVE PARAMETERS
 '''
 
 if is_training:
-    weightsfile = os.path.join("/results/weights_{}.pkl".format(task))
+    weightsfile = os.path.join("weights_{}.pkl".format(task))
     with open(weightsfile, "wb") as wf:
         pickle.dump(model.state_dict(), wf)
 
