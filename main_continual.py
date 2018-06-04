@@ -150,8 +150,6 @@ def run_epoch(loader, epoch, is_training=False):
     losses = []
     mean_fc = []
     var_fc = []
-    mean_conv = []
-    var_conv = []
 
     for i, (images, labels) in enumerate(loader):
         # Repeat samples (Casper's trick)
@@ -182,26 +180,21 @@ def run_epoch(loader, epoch, is_training=False):
 
         _, predicted = logits.max(1)
         accuracy = (predicted.data.cpu() == y.cpu()).float().mean()
-        mean_fc2 = model.fc3.qw_mean.data
-        var_fc2 = model.fc3.qw_logvar.data
-        mean_conv2 = model.conv1.qw_mean.data
-        var_conv2 = model.conv1.qw_logvar.data
+        mean_fc3 = model.fc3.qw_mean.data
+        var_fc3 = model.fc3.qw_logvar.data
 
         accuracies.append(accuracy)
         losses.append(loss.data.mean())
         kls.append(beta*kl.data.mean())
         likelihoods.append(ll)
-        mean_fc.append(mean_fc2)
-        var_fc.append(var_fc2)
-        mean_conv.append(mean_conv2)
-        var_conv.append(var_conv2)
+        mean_fc.append(mean_fc3)
+        var_fc.append(var_fc3)
 
     diagnostics = {'loss': sum(losses)/len(losses),
                    'acc': sum(accuracies)/len(accuracies),
                    'kl': sum(kls)/len(kls),
                    'likelihood': sum(likelihoods)/len(likelihoods),
-                   'mean_fc': mean_fc, 'var_fc': var_fc,
-                   'mean_conv': mean_conv, 'var_conv': var_conv}
+                   'mean_fc': mean_fc, 'var_fc': var_fc}
 
     return diagnostics
 
