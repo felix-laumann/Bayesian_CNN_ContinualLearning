@@ -155,12 +155,8 @@ def run_epoch(loader, epoch, is_training=False):
 
     for i, (images, labels) in enumerate(loader):
         # Repeat samples (Casper's trick)
-        if net is BBBAlexNet:
-            x = images.view(-1, inputs, 227, 227).repeat(num_samples, 1, 1, 1)
-            y = labels.repeat(num_samples)
-        elif net is BBBLeNet:
-            x = images.view(-1, inputs, 32, 32).repeat(num_samples, 1, 1, 1)
-            y = labels.repeat(num_samples)
+        x = images.view(-1, inputs, resize, resize).repeat(num_samples, 1, 1, 1)
+        y = labels.repeat(num_samples)
 
         if cuda:
             x = x.cuda()
@@ -186,10 +182,10 @@ def run_epoch(loader, epoch, is_training=False):
 
         _, predicted = logits.max(1)
         accuracy = (predicted.data.cpu() == y.cpu()).float().mean()
-        mean_fc2 = model.fc2.qw_mean.data
-        var_fc2 = model.fc2.qw_logvar.data
-        mean_conv2 = model.conv2.qw_mean.data
-        var_conv2 = model.conv2.qw_logvar.data
+        mean_fc2 = model.fc3.qw_mean.data
+        var_fc2 = model.fc3.qw_logvar.data
+        mean_conv2 = model.conv1.qw_mean.data
+        var_conv2 = model.conv1.qw_logvar.data
 
         accuracies.append(accuracy)
         losses.append(loss.data.mean())
