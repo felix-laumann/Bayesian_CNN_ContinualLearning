@@ -38,11 +38,9 @@ valid_2_eval = np.array(valid_2_eval).astype(np.float32)
 
 f = plt.figure(figsize=(10, 8))
 
-#train, valid = load_data(tasks=tasks)
-
 plt.plot(valid_1, "--", label=r"Validation, prior: $U(a, b)$", color='maroon')
 plt.plot(valid_2, "--", label=r"Validation, prior: $q(w | \theta_A)$", color='navy')
-plt.plot(valid_2_eval, "--", label=r"Validation task A after task B", color='#89c765')
+plt.plot(valid_2_eval, "--", label=r"Validation task A after training task B", color='#89c765')
 
 
 plt.xlabel("Epochs")
