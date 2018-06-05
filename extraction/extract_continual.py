@@ -36,11 +36,45 @@ with open("diagnostics_2_eval.txt", 'r') as file:
 
 valid_2_eval = np.array(valid_2_eval).astype(np.float32)
 
+with open("diagnostics_3.txt", 'r') as file:
+    acc = re.findall(r"'acc':\s+tensor\((.*?)\)", file.read())
+    print(acc)
+
+train_3 = acc[1::2]
+valid_3 = acc[0::2]
+train_3 = np.array(train_3).astype(np.float32)
+valid_3 = np.array(valid_3).astype(np.float32)
+
+with open("diagnostics_3_eval.txt", 'r') as file:
+    valid_3_eval = re.findall(r"'acc':\s+tensor\((.*?)\)", file.read())
+    print(valid_3_eval)
+
+valid_3_eval = np.array(valid_3_eval).astype(np.float32)
+
+with open("diagnostics_4.txt", 'r') as file:
+    acc = re.findall(r"'acc':\s+tensor\((.*?)\)", file.read())
+    print(acc)
+
+train_4 = acc[1::2]
+valid_4 = acc[0::2]
+train_4 = np.array(train_4).astype(np.float32)
+valid_4 = np.array(valid_4).astype(np.float32)
+
+with open("diagnostics_4_eval.txt", 'r') as file:
+    valid_4_eval = re.findall(r"'acc':\s+tensor\((.*?)\)", file.read())
+    print(valid_4_eval)
+
+valid_4_eval = np.array(valid_4_eval).astype(np.float32)
+
 f = plt.figure(figsize=(10, 8))
 
 plt.plot(valid_1, "--", label=r"Validation, prior: $U(a, b)$", color='maroon')
 plt.plot(valid_2, "--", label=r"Validation, prior: $q(w | \theta_A)$", color='navy')
 plt.plot(valid_2_eval, "--", label=r"Validation task A after training task B", color='#89c765')
+plt.plot(valid_3, "--", label=r"Validation, prior: $q(w | \theta_B)$", color='peru')
+plt.plot(valid_3_eval, "--", label=r"Validation task B after training task C", color='m')
+plt.plot(valid_4, "--", label=r"Validation, prior: $q(w | \theta_C)$", color='gray')
+plt.plot(valid_4_eval, "--", label=r"Validation task C after training task D", color='black')
 
 
 plt.xlabel("Epochs")

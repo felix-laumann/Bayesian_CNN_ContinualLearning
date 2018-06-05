@@ -15,7 +15,7 @@ cuda = torch.cuda.is_available()
 HYPERPARAMETERS
 '''
 is_training = True  # set to "False" for evaluation of network ability to remember previous tasks
-pretrained = True  # change pretrained to "True" for continual learning
+pretrained = False  # change pretrained to "True" for continual learning
 
 if pretrained is False:
     task = 1
