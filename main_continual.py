@@ -6,7 +6,7 @@ import torchvision.transforms as transforms
 import torch.utils.data as data
 import torchvision.datasets as dsets
 import os
-from utils.BBBConvmodel import BBBAlexNet, BBBLeNet
+from utils.BBBConvmodel import BBBAlexNet, BBBLeNet, BBB3Conv3FC
 from utils.BBBlayers import GaussianVariationalInference
 
 cuda = torch.cuda.is_available()
@@ -27,8 +27,8 @@ elif pretrained is True:
 num_samples = 10  # because of Casper's trick
 batch_size = 32
 beta_type = "Blundell"
-net = BBBLeNet   # LeNet or AlexNet
-dataset = 'MNIST'  # MNIST, CIFAR-10, or CIFAR-100
+net = BBB3Conv3FC   # LeNet, BBB3Conv3FC, or AlexNet
+dataset = 'ImageNet'  # MNIST, CIFAR-10, or CIFAR-100
 num_epochs = 100
 p_logvar_init = 0
 q_logvar_init = -10
@@ -46,9 +46,12 @@ elif dataset is 'CIFAR-10':    # train with CIFAR-10
 elif dataset is 'CIFAR-100':    # train with CIFAR-100
     outputs = 100
     inputs = 3
+elif dataset is 'ImageNet':    # train with 3 ImageNet classes
+    outputs = 3
+    inputs = 3
 
 
-if net is BBBLeNet:
+if net is BBBLeNet or BBB3Conv3FC:
     resize = 32
 elif net is BBBAlexNet:
     resize = 227
@@ -57,20 +60,29 @@ elif net is BBBAlexNet:
 LOADING DATASET
 '''
 
-if net is BBBLeNet:
+if dataset is 'MNIST':
     transform = transforms.Compose([transforms.Resize((resize, resize)), transforms.ToTensor(),
-                                    transforms.Normalize((0.1307,), (0.3081,)),
-                                    transforms.Lambda(lambda x: x + noise * torch.randn(x.size()))])
-    train_dataset = dsets.MNIST(root="data", download=True,
-                                transform=transform)
-    val_dataset = dsets.MNIST(root="data", download=True, train=False,
-                              transform=transform)
-elif net is BBBAlexNet:
+                                    transforms.Normalize((0.1307,), (0.3081,))])
+    train_dataset = dsets.MNIST(root="data", download=True, transform=transform)
+    val_dataset = dsets.MNIST(root="data", download=True, train=False, transform=transform)
+
+elif dataset is 'CIFAR-100':
     transform = transforms.Compose([transforms.Resize((resize, resize)), transforms.ToTensor(),
-                                    transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
-                                    transforms.Lambda(lambda x: x + noise * torch.randn(x.size()))])
+                                    transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
     train_dataset = dsets.CIFAR100(root="data", download=True, transform=transform)
-    val_dataset = dsets.CIFAR100(root='data', download=True, train=False, transform=transform)
+    val_dataset = dsets.CIFAR100(root="data", download=True, train=False, transform=transform)
+
+elif dataset is 'CIFAR-10':
+    transform = transforms.Compose([transforms.Resize((resize, resize)), transforms.ToTensor(),
+                                    transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
+    train_dataset = dsets.CIFAR10(root="data", download=True, transform=transform)
+    val_dataset = dsets.CIFAR10(root="data", download=True, train=False, transform=transform)
+
+elif dataset is 'ImageNet':
+    transform = transforms.Compose([transforms.Resize((resize, resize)), transforms.ToTensor(),
+                                    transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
+    train_dataset = dsets.ImageFolder(root="/home/felix/PycharmProjects/MasterProject/data/ImageNet/similar/n02122298/train/", transform=transform)
+    val_dataset = dsets.ImageFolder(root="/home/felix/PycharmProjects/MasterProject/data/ImageNet/similar/n02122298/val/", transform=transform)
 
 '''
 MAKING DATASET ITERABLE
@@ -93,12 +105,12 @@ def cnnmodel(pretrained, task):
     if pretrained:
         if is_training:
             # load pretrained posterior distribution of one task as prior of next task
-            with open("results/weights_{}.pkl".format(task-1), "rb") as previous:
+            with open("weights_{}.pkl".format(task-1), "rb") as previous:
                 d = pickle.load(previous)
                 model.load_prior(d)
         else:
             # evaluate accuracy of previous task
-            with open("results/weights_{}.pkl".format(task), "rb") as previous:
+            with open("weights_{}.pkl".format(task), "rb") as previous:
                 d = pickle.load(previous)
                 model.load_prior(d)
 

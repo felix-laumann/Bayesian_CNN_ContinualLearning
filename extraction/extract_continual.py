@@ -50,7 +50,7 @@ with open("diagnostics_3_eval.txt", 'r') as file:
     print(valid_3_eval)
 
 valid_3_eval = np.array(valid_3_eval).astype(np.float32)
-
+"""
 with open("diagnostics_4.txt", 'r') as file:
     acc = re.findall(r"'acc':\s+tensor\((.*?)\)", file.read())
     print(acc)
@@ -65,7 +65,7 @@ with open("diagnostics_4_eval.txt", 'r') as file:
     print(valid_4_eval)
 
 valid_4_eval = np.array(valid_4_eval).astype(np.float32)
-
+"""
 f = plt.figure(figsize=(10, 8))
 
 plt.plot(valid_1, "--", label=r"Validation, prior: $U(a, b)$", color='maroon')
@@ -73,8 +73,8 @@ plt.plot(valid_2, "--", label=r"Validation, prior: $q(w | \theta_A)$", color='na
 plt.plot(valid_2_eval, "--", label=r"Validation task A after training task B", color='#89c765')
 plt.plot(valid_3, "--", label=r"Validation, prior: $q(w | \theta_B)$", color='peru')
 plt.plot(valid_3_eval, "--", label=r"Validation task B after training task C", color='m')
-plt.plot(valid_4, "--", label=r"Validation, prior: $q(w | \theta_C)$", color='gray')
-plt.plot(valid_4_eval, "--", label=r"Validation task C after training task D", color='black')
+#plt.plot(valid_4, "--", label=r"Validation, prior: $q(w | \theta_C)$", color='gray')
+#plt.plot(valid_4_eval, "--", label=r"Validation task C after training task D", color='black')
 
 
 plt.xlabel("Epochs")
@@ -82,7 +82,6 @@ plt.ylabel("Accuracy")
 x_ticks = range(len(valid_1))
 plt.xticks(x_ticks[9::10], map(lambda x: x+1, x_ticks[9::10]))
 
-f.suptitle("Evaluating continual learning")
 plt.legend(loc=5)
 
 plt.savefig("results_continual.png")
