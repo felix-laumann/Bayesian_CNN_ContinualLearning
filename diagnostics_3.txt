@@ -1,368 +1,370 @@
 {'type': 'train', 'epoch': 0, 'loss': tensor(1.00000e+05 *
-       5.1519, device='cuda:0'), 'acc': tensor(0.2791), 'kl': tensor(1.00000e+05 *
-       5.1476, device='cuda:0'), 'likelihood': tensor(-431.0886, device='cuda:0')}{'type': 'validation', 'epoch': 0, 'loss': tensor(1.00000e+06 *
-       1.5437, device='cuda:0'), 'acc': tensor(0.3100), 'kl': tensor(1.00000e+06 *
-       1.5433, device='cuda:0'), 'likelihood': tensor(-398.8750, device='cuda:0')}{'type': 'train', 'epoch': 1, 'loss': tensor(1.00000e+05 *
-       5.1522, device='cuda:0'), 'acc': tensor(0.3033), 'kl': tensor(1.00000e+05 *
-       5.1483, device='cuda:0'), 'likelihood': tensor(-395.7604, device='cuda:0')}{'type': 'validation', 'epoch': 1, 'loss': tensor(1.00000e+06 *
-       1.5454, device='cuda:0'), 'acc': tensor(0.3314), 'kl': tensor(1.00000e+06 *
-       1.5450, device='cuda:0'), 'likelihood': tensor(-354.7500, device='cuda:0')}{'type': 'train', 'epoch': 2, 'loss': tensor(1.00000e+05 *
-       5.1537, device='cuda:0'), 'acc': tensor(0.3295), 'kl': tensor(1.00000e+05 *
-       5.1501, device='cuda:0'), 'likelihood': tensor(-360.4583, device='cuda:0')}{'type': 'validation', 'epoch': 2, 'loss': tensor(1.00000e+06 *
-       1.5450, device='cuda:0'), 'acc': tensor(0.3543), 'kl': tensor(1.00000e+06 *
-       1.5447, device='cuda:0'), 'likelihood': tensor(-316., device='cuda:0')}{'type': 'train', 'epoch': 3, 'loss': tensor(1.00000e+05 *
-       5.1502, device='cuda:0'), 'acc': tensor(0.3728), 'kl': tensor(1.00000e+05 *
-       5.1470, device='cuda:0'), 'likelihood': tensor(-313.0781, device='cuda:0')}{'type': 'validation', 'epoch': 3, 'loss': tensor(1.00000e+06 *
-       1.5450, device='cuda:0'), 'acc': tensor(0.3957), 'kl': tensor(1.00000e+06 *
-       1.5446, device='cuda:0'), 'likelihood': tensor(-310.7500, device='cuda:0')}{'type': 'train', 'epoch': 4, 'loss': tensor(1.00000e+05 *
-       5.1513, device='cuda:0'), 'acc': tensor(0.4070), 'kl': tensor(1.00000e+05 *
-       5.1485, device='cuda:0'), 'likelihood': tensor(-281.1615, device='cuda:0')}{'type': 'validation', 'epoch': 4, 'loss': tensor(1.00000e+06 *
-       1.5436, device='cuda:0'), 'acc': tensor(0.4171), 'kl': tensor(1.00000e+06 *
-       1.5433, device='cuda:0'), 'likelihood': tensor(-256.6250, device='cuda:0')}{'type': 'train', 'epoch': 5, 'loss': tensor(1.00000e+05 *
-       5.1479, device='cuda:0'), 'acc': tensor(0.4367), 'kl': tensor(1.00000e+05 *
-       5.1454, device='cuda:0'), 'likelihood': tensor(-246.9896, device='cuda:0')}{'type': 'validation', 'epoch': 5, 'loss': tensor(1.5441e+06, device='cuda:0'), 'acc': tensor(0.4571), 'kl': tensor(1.00000e+06 *
-       1.5438, device='cuda:0'), 'likelihood': tensor(-241.8750, device='cuda:0')}{'type': 'train', 'epoch': 6, 'loss': tensor(1.00000e+05 *
-       5.1466, device='cuda:0'), 'acc': tensor(0.4885), 'kl': tensor(1.00000e+05 *
-       5.1444, device='cuda:0'), 'likelihood': tensor(-217.0938, device='cuda:0')}{'type': 'validation', 'epoch': 6, 'loss': tensor(1.00000e+06 *
-       1.5426, device='cuda:0'), 'acc': tensor(0.5200), 'kl': tensor(1.00000e+06 *
-       1.5425, device='cuda:0'), 'likelihood': tensor(-187.8750, device='cuda:0')}{'type': 'train', 'epoch': 7, 'loss': tensor(1.00000e+05 *
-       5.1482, device='cuda:0'), 'acc': tensor(0.5259), 'kl': tensor(1.00000e+05 *
-       5.1463, device='cuda:0'), 'likelihood': tensor(-190.3750, device='cuda:0')}{'type': 'validation', 'epoch': 7, 'loss': tensor(1.00000e+06 *
-       1.5436, device='cuda:0'), 'acc': tensor(0.5443), 'kl': tensor(1.00000e+06 *
-       1.5434, device='cuda:0'), 'likelihood': tensor(-176.2500, device='cuda:0')}{'type': 'train', 'epoch': 8, 'loss': tensor(1.00000e+05 *
-       5.1456, device='cuda:0'), 'acc': tensor(0.5424), 'kl': tensor(1.00000e+05 *
-       5.1438, device='cuda:0'), 'likelihood': tensor(-173.0469, device='cuda:0')}{'type': 'validation', 'epoch': 8, 'loss': tensor(1.00000e+06 *
-       1.5447, device='cuda:0'), 'acc': tensor(0.5786), 'kl': tensor(1.00000e+06 *
-       1.5445, device='cuda:0'), 'likelihood': tensor(-164.2500, device='cuda:0')}{'type': 'train', 'epoch': 9, 'loss': tensor(1.00000e+05 *
-       5.1473, device='cuda:0'), 'acc': tensor(0.5768), 'kl': tensor(1.00000e+05 *
-       5.1457, device='cuda:0'), 'likelihood': tensor(-154.8854, device='cuda:0')}{'type': 'validation', 'epoch': 9, 'loss': tensor(1.00000e+06 *
-       1.5430, device='cuda:0'), 'acc': tensor(0.6029), 'kl': tensor(1.00000e+06 *
-       1.5428, device='cuda:0'), 'likelihood': tensor(-149.8750, device='cuda:0')}{'type': 'train', 'epoch': 10, 'loss': tensor(1.00000e+05 *
-       5.1478, device='cuda:0'), 'acc': tensor(0.6079), 'kl': tensor(1.00000e+05 *
-       5.1463, device='cuda:0'), 'likelihood': tensor(-143.1875, device='cuda:0')}{'type': 'validation', 'epoch': 10, 'loss': tensor(1.00000e+06 *
-       1.5436, device='cuda:0'), 'acc': tensor(0.6229), 'kl': tensor(1.00000e+06 *
-       1.5435, device='cuda:0'), 'likelihood': tensor(-138.8750, device='cuda:0')}{'type': 'train', 'epoch': 11, 'loss': tensor(1.00000e+05 *
-       5.1474, device='cuda:0'), 'acc': tensor(0.6336), 'kl': tensor(1.00000e+05 *
-       5.1462, device='cuda:0'), 'likelihood': tensor(-123.9323, device='cuda:0')}{'type': 'validation', 'epoch': 11, 'loss': tensor(1.00000e+06 *
-       1.5425, device='cuda:0'), 'acc': tensor(0.6500), 'kl': tensor(1.00000e+06 *
-       1.5424, device='cuda:0'), 'likelihood': tensor(-104.8750, device='cuda:0')}{'type': 'train', 'epoch': 12, 'loss': tensor(1.00000e+05 *
-       5.1418, device='cuda:0'), 'acc': tensor(0.6632), 'kl': tensor(1.00000e+05 *
-       5.1407, device='cuda:0'), 'likelihood': tensor(-114.3958, device='cuda:0')}{'type': 'validation', 'epoch': 12, 'loss': tensor(1.5440e+06, device='cuda:0'), 'acc': tensor(0.6871), 'kl': tensor(1.00000e+06 *
-       1.5439, device='cuda:0'), 'likelihood': tensor(-106.5000, device='cuda:0')}{'type': 'train', 'epoch': 13, 'loss': tensor(1.00000e+05 *
-       5.1439, device='cuda:0'), 'acc': tensor(0.6825), 'kl': tensor(1.00000e+05 *
-       5.1428, device='cuda:0'), 'likelihood': tensor(-102.3646, device='cuda:0')}{'type': 'validation', 'epoch': 13, 'loss': tensor(1.00000e+06 *
-       1.5427, device='cuda:0'), 'acc': tensor(0.7029), 'kl': tensor(1.00000e+06 *
-       1.5426, device='cuda:0'), 'likelihood': tensor(-94., device='cuda:0')}{'type': 'train', 'epoch': 14, 'loss': tensor(1.00000e+05 *
-       5.1424, device='cuda:0'), 'acc': tensor(0.7206), 'kl': tensor(1.00000e+05 *
-       5.1416, device='cuda:0'), 'likelihood': tensor(-88.6979, device='cuda:0')}{'type': 'validation', 'epoch': 14, 'loss': tensor(1.00000e+06 *
-       1.5433, device='cuda:0'), 'acc': tensor(0.7243), 'kl': tensor(1.00000e+06 *
-       1.5432, device='cuda:0'), 'likelihood': tensor(-83.7500, device='cuda:0')}{'type': 'train', 'epoch': 15, 'loss': tensor(1.00000e+05 *
-       5.1408, device='cuda:0'), 'acc': tensor(0.7276), 'kl': tensor(1.00000e+05 *
-       5.1400, device='cuda:0'), 'likelihood': tensor(-84.8906, device='cuda:0')}{'type': 'validation', 'epoch': 15, 'loss': tensor(1.5411e+06, device='cuda:0'), 'acc': tensor(0.7586), 'kl': tensor(1.00000e+06 *
-       1.5411, device='cuda:0'), 'likelihood': tensor(-79.7500, device='cuda:0')}{'type': 'train', 'epoch': 16, 'loss': tensor(1.00000e+05 *
-       5.1425, device='cuda:0'), 'acc': tensor(0.7504), 'kl': tensor(1.00000e+05 *
-       5.1417, device='cuda:0'), 'likelihood': tensor(-74.5156, device='cuda:0')}{'type': 'validation', 'epoch': 16, 'loss': tensor(1.00000e+06 *
-       1.5422, device='cuda:0'), 'acc': tensor(0.7714), 'kl': tensor(1.00000e+06 *
-       1.5421, device='cuda:0'), 'likelihood': tensor(-59., device='cuda:0')}{'type': 'train', 'epoch': 17, 'loss': tensor(1.00000e+05 *
-       5.1398, device='cuda:0'), 'acc': tensor(0.7569), 'kl': tensor(1.00000e+05 *
-       5.1391, device='cuda:0'), 'likelihood': tensor(-72.7292, device='cuda:0')}{'type': 'validation', 'epoch': 17, 'loss': tensor(1.00000e+06 *
-       1.5425, device='cuda:0'), 'acc': tensor(0.7529), 'kl': tensor(1.00000e+06 *
-       1.5424, device='cuda:0'), 'likelihood': tensor(-77.2500, device='cuda:0')}{'type': 'train', 'epoch': 18, 'loss': tensor(1.00000e+05 *
-       5.1354, device='cuda:0'), 'acc': tensor(0.7800), 'kl': tensor(1.00000e+05 *
-       5.1347, device='cuda:0'), 'likelihood': tensor(-63.1719, device='cuda:0')}{'type': 'validation', 'epoch': 18, 'loss': tensor(1.5421e+06, device='cuda:0'), 'acc': tensor(0.7700), 'kl': tensor(1.00000e+06 *
-       1.5420, device='cuda:0'), 'likelihood': tensor(-62.3750, device='cuda:0')}{'type': 'train', 'epoch': 19, 'loss': tensor(1.00000e+05 *
-       5.1391, device='cuda:0'), 'acc': tensor(0.7935), 'kl': tensor(1.00000e+05 *
-       5.1385, device='cuda:0'), 'likelihood': tensor(-58.4375, device='cuda:0')}{'type': 'validation', 'epoch': 19, 'loss': tensor(1.00000e+06 *
-       1.5415, device='cuda:0'), 'acc': tensor(0.8100), 'kl': tensor(1.00000e+06 *
-       1.5415, device='cuda:0'), 'likelihood': tensor(-52.1250, device='cuda:0')}{'type': 'train', 'epoch': 20, 'loss': tensor(1.00000e+05 *
-       5.1387, device='cuda:0'), 'acc': tensor(0.8050), 'kl': tensor(1.00000e+05 *
-       5.1381, device='cuda:0'), 'likelihood': tensor(-52.9167, device='cuda:0')}{'type': 'validation', 'epoch': 20, 'loss': tensor(1.00000e+06 *
-       1.5419, device='cuda:0'), 'acc': tensor(0.8314), 'kl': tensor(1.00000e+06 *
-       1.5419, device='cuda:0'), 'likelihood': tensor(-40., device='cuda:0')}{'type': 'train', 'epoch': 21, 'loss': tensor(1.00000e+05 *
-       5.1358, device='cuda:0'), 'acc': tensor(0.8284), 'kl': tensor(1.00000e+05 *
-       5.1354, device='cuda:0'), 'likelihood': tensor(-43.5729, device='cuda:0')}{'type': 'validation', 'epoch': 21, 'loss': tensor(1.00000e+06 *
-       1.5411, device='cuda:0'), 'acc': tensor(0.8314), 'kl': tensor(1.00000e+06 *
-       1.5410, device='cuda:0'), 'likelihood': tensor(-42.3750, device='cuda:0')}{'type': 'train', 'epoch': 22, 'loss': tensor(1.00000e+05 *
-       5.1368, device='cuda:0'), 'acc': tensor(0.8314), 'kl': tensor(1.00000e+05 *
-       5.1363, device='cuda:0'), 'likelihood': tensor(-45.0833, device='cuda:0')}{'type': 'validation', 'epoch': 22, 'loss': tensor(1.00000e+06 *
-       1.5415, device='cuda:0'), 'acc': tensor(0.8314), 'kl': tensor(1.00000e+06 *
-       1.5415, device='cuda:0'), 'likelihood': tensor(-48.5000, device='cuda:0')}{'type': 'train', 'epoch': 23, 'loss': tensor(1.00000e+05 *
-       5.1358, device='cuda:0'), 'acc': tensor(0.8445), 'kl': tensor(1.00000e+05 *
-       5.1354, device='cuda:0'), 'likelihood': tensor(-41.9010, device='cuda:0')}{'type': 'validation', 'epoch': 23, 'loss': tensor(1.00000e+06 *
-       1.5408, device='cuda:0'), 'acc': tensor(0.8357), 'kl': tensor(1.5407e+06, device='cuda:0'), 'likelihood': tensor(-43.3750, device='cuda:0')}{'type': 'train', 'epoch': 24, 'loss': tensor(1.00000e+05 *
-       5.1328, device='cuda:0'), 'acc': tensor(0.8390), 'kl': tensor(1.00000e+05 *
-       5.1323, device='cuda:0'), 'likelihood': tensor(-41.4062, device='cuda:0')}{'type': 'validation', 'epoch': 24, 'loss': tensor(1.00000e+06 *
-       1.5391, device='cuda:0'), 'acc': tensor(0.8514), 'kl': tensor(1.00000e+06 *
-       1.5391, device='cuda:0'), 'likelihood': tensor(-38.8750, device='cuda:0')}{'type': 'train', 'epoch': 25, 'loss': tensor(1.00000e+05 *
-       5.1350, device='cuda:0'), 'acc': tensor(0.8495), 'kl': tensor(1.00000e+05 *
-       5.1346, device='cuda:0'), 'likelihood': tensor(-40.0052, device='cuda:0')}{'type': 'validation', 'epoch': 25, 'loss': tensor(1.00000e+06 *
-       1.5405, device='cuda:0'), 'acc': tensor(0.8486), 'kl': tensor(1.00000e+06 *
-       1.5404, device='cuda:0'), 'likelihood': tensor(-36.8750, device='cuda:0')}{'type': 'train', 'epoch': 26, 'loss': tensor(1.00000e+05 *
-       5.1352, device='cuda:0'), 'acc': tensor(0.8629), 'kl': tensor(1.00000e+05 *
-       5.1348, device='cuda:0'), 'likelihood': tensor(-34.8594, device='cuda:0')}{'type': 'validation', 'epoch': 26, 'loss': tensor(1.00000e+06 *
-       1.5398, device='cuda:0'), 'acc': tensor(0.8757), 'kl': tensor(1.00000e+06 *
-       1.5397, device='cuda:0'), 'likelihood': tensor(-30., device='cuda:0')}{'type': 'train', 'epoch': 27, 'loss': tensor(1.00000e+05 *
-       5.1341, device='cuda:0'), 'acc': tensor(0.8677), 'kl': tensor(1.00000e+05 *
-       5.1338, device='cuda:0'), 'likelihood': tensor(-33.8281, device='cuda:0')}{'type': 'validation', 'epoch': 27, 'loss': tensor(1.00000e+06 *
-       1.5404, device='cuda:0'), 'acc': tensor(0.8829), 'kl': tensor(1.5404e+06, device='cuda:0'), 'likelihood': tensor(-28.3750, device='cuda:0')}{'type': 'train', 'epoch': 28, 'loss': tensor(1.00000e+05 *
-       5.1321, device='cuda:0'), 'acc': tensor(0.8695), 'kl': tensor(1.00000e+05 *
-       5.1318, device='cuda:0'), 'likelihood': tensor(-31.5000, device='cuda:0')}{'type': 'validation', 'epoch': 28, 'loss': tensor(1.00000e+06 *
-       1.5402, device='cuda:0'), 'acc': tensor(0.8557), 'kl': tensor(1.00000e+06 *
-       1.5402, device='cuda:0'), 'likelihood': tensor(-34.1250, device='cuda:0')}{'type': 'train', 'epoch': 29, 'loss': tensor(1.00000e+05 *
-       5.1326, device='cuda:0'), 'acc': tensor(0.8863), 'kl': tensor(1.00000e+05 *
-       5.1323, device='cuda:0'), 'likelihood': tensor(-28.9479, device='cuda:0')}{'type': 'validation', 'epoch': 29, 'loss': tensor(1.5383e+06, device='cuda:0'), 'acc': tensor(0.8943), 'kl': tensor(1.00000e+06 *
-       1.5382, device='cuda:0'), 'likelihood': tensor(-29.3750, device='cuda:0')}{'type': 'train', 'epoch': 30, 'loss': tensor(1.00000e+05 *
-       5.1340, device='cuda:0'), 'acc': tensor(0.8896), 'kl': tensor(1.00000e+05 *
-       5.1337, device='cuda:0'), 'likelihood': tensor(-27.2448, device='cuda:0')}{'type': 'validation', 'epoch': 30, 'loss': tensor(1.00000e+06 *
-       1.5407, device='cuda:0'), 'acc': tensor(0.8914), 'kl': tensor(1.00000e+06 *
-       1.5407, device='cuda:0'), 'likelihood': tensor(-24.1250, device='cuda:0')}{'type': 'train', 'epoch': 31, 'loss': tensor(5.1340e+05, device='cuda:0'), 'acc': tensor(0.8830), 'kl': tensor(1.00000e+05 *
-       5.1338, device='cuda:0'), 'likelihood': tensor(-27.7396, device='cuda:0')}{'type': 'validation', 'epoch': 31, 'loss': tensor(1.00000e+06 *
-       1.5406, device='cuda:0'), 'acc': tensor(0.8914), 'kl': tensor(1.00000e+06 *
-       1.5406, device='cuda:0'), 'likelihood': tensor(-25.1250, device='cuda:0')}{'type': 'train', 'epoch': 32, 'loss': tensor(1.00000e+05 *
-       5.1340, device='cuda:0'), 'acc': tensor(0.8927), 'kl': tensor(1.00000e+05 *
-       5.1337, device='cuda:0'), 'likelihood': tensor(-25.1042, device='cuda:0')}{'type': 'validation', 'epoch': 32, 'loss': tensor(1.00000e+06 *
-       1.5375, device='cuda:0'), 'acc': tensor(0.9043), 'kl': tensor(1.00000e+06 *
-       1.5375, device='cuda:0'), 'likelihood': tensor(-24.3750, device='cuda:0')}{'type': 'train', 'epoch': 33, 'loss': tensor(5.1329e+05, device='cuda:0'), 'acc': tensor(0.8951), 'kl': tensor(1.00000e+05 *
-       5.1327, device='cuda:0'), 'likelihood': tensor(-24.2917, device='cuda:0')}{'type': 'validation', 'epoch': 33, 'loss': tensor(1.00000e+06 *
-       1.5395, device='cuda:0'), 'acc': tensor(0.8886), 'kl': tensor(1.00000e+06 *
-       1.5395, device='cuda:0'), 'likelihood': tensor(-27.2500, device='cuda:0')}{'type': 'train', 'epoch': 34, 'loss': tensor(1.00000e+05 *
-       5.1300, device='cuda:0'), 'acc': tensor(0.9038), 'kl': tensor(1.00000e+05 *
-       5.1298, device='cuda:0'), 'likelihood': tensor(-21.1042, device='cuda:0')}{'type': 'validation', 'epoch': 34, 'loss': tensor(1.00000e+06 *
-       1.5402, device='cuda:0'), 'acc': tensor(0.9071), 'kl': tensor(1.00000e+06 *
-       1.5402, device='cuda:0'), 'likelihood': tensor(-21.6250, device='cuda:0')}{'type': 'train', 'epoch': 35, 'loss': tensor(1.00000e+05 *
-       5.1304, device='cuda:0'), 'acc': tensor(0.9104), 'kl': tensor(1.00000e+05 *
-       5.1302, device='cuda:0'), 'likelihood': tensor(-21.8906, device='cuda:0')}{'type': 'validation', 'epoch': 35, 'loss': tensor(1.00000e+06 *
-       1.5390, device='cuda:0'), 'acc': tensor(0.9071), 'kl': tensor(1.00000e+06 *
-       1.5390, device='cuda:0'), 'likelihood': tensor(-22.2500, device='cuda:0')}{'type': 'train', 'epoch': 36, 'loss': tensor(1.00000e+05 *
-       5.1313, device='cuda:0'), 'acc': tensor(0.9147), 'kl': tensor(1.00000e+05 *
-       5.1311, device='cuda:0'), 'likelihood': tensor(-19.5625, device='cuda:0')}{'type': 'validation', 'epoch': 36, 'loss': tensor(1.5383e+06, device='cuda:0'), 'acc': tensor(0.9271), 'kl': tensor(1.00000e+06 *
-       1.5383, device='cuda:0'), 'likelihood': tensor(-18.5000, device='cuda:0')}{'type': 'train', 'epoch': 37, 'loss': tensor(1.00000e+05 *
-       5.1280, device='cuda:0'), 'acc': tensor(0.9125), 'kl': tensor(1.00000e+05 *
-       5.1278, device='cuda:0'), 'likelihood': tensor(-20.0938, device='cuda:0')}{'type': 'validation', 'epoch': 37, 'loss': tensor(1.00000e+06 *
-       1.5375, device='cuda:0'), 'acc': tensor(0.9043), 'kl': tensor(1.00000e+06 *
-       1.5375, device='cuda:0'), 'likelihood': tensor(-21.5000, device='cuda:0')}{'type': 'train', 'epoch': 38, 'loss': tensor(1.00000e+05 *
-       5.1285, device='cuda:0'), 'acc': tensor(0.9189), 'kl': tensor(1.00000e+05 *
-       5.1283, device='cuda:0'), 'likelihood': tensor(-18.0365, device='cuda:0')}{'type': 'validation', 'epoch': 38, 'loss': tensor(1.00000e+06 *
-       1.5390, device='cuda:0'), 'acc': tensor(0.9286), 'kl': tensor(1.00000e+06 *
-       1.5390, device='cuda:0'), 'likelihood': tensor(-18.3750, device='cuda:0')}{'type': 'train', 'epoch': 39, 'loss': tensor(1.00000e+05 *
-       5.1294, device='cuda:0'), 'acc': tensor(0.9207), 'kl': tensor(1.00000e+05 *
-       5.1292, device='cuda:0'), 'likelihood': tensor(-17.0417, device='cuda:0')}{'type': 'validation', 'epoch': 39, 'loss': tensor(1.00000e+06 *
-       1.5391, device='cuda:0'), 'acc': tensor(0.9129), 'kl': tensor(1.00000e+06 *
-       1.5391, device='cuda:0'), 'likelihood': tensor(-20.3750, device='cuda:0')}{'type': 'train', 'epoch': 40, 'loss': tensor(1.00000e+05 *
-       5.1254, device='cuda:0'), 'acc': tensor(0.9212), 'kl': tensor(1.00000e+05 *
-       5.1252, device='cuda:0'), 'likelihood': tensor(-17.1094, device='cuda:0')}{'type': 'validation', 'epoch': 40, 'loss': tensor(1.00000e+06 *
-       1.5383, device='cuda:0'), 'acc': tensor(0.9271), 'kl': tensor(1.00000e+06 *
-       1.5383, device='cuda:0'), 'likelihood': tensor(-17., device='cuda:0')}{'type': 'train', 'epoch': 41, 'loss': tensor(1.00000e+05 *
-       5.1292, device='cuda:0'), 'acc': tensor(0.9297), 'kl': tensor(1.00000e+05 *
-       5.1290, device='cuda:0'), 'likelihood': tensor(-16.5885, device='cuda:0')}{'type': 'validation', 'epoch': 41, 'loss': tensor(1.00000e+06 *
-       1.5373, device='cuda:0'), 'acc': tensor(0.9271), 'kl': tensor(1.00000e+06 *
-       1.5373, device='cuda:0'), 'likelihood': tensor(-18., device='cuda:0')}{'type': 'train', 'epoch': 42, 'loss': tensor(1.00000e+05 *
-       5.1271, device='cuda:0'), 'acc': tensor(0.9290), 'kl': tensor(1.00000e+05 *
-       5.1270, device='cuda:0'), 'likelihood': tensor(-15.3906, device='cuda:0')}{'type': 'validation', 'epoch': 42, 'loss': tensor(1.00000e+06 *
-       1.5364, device='cuda:0'), 'acc': tensor(0.9414), 'kl': tensor(1.00000e+06 *
-       1.5364, device='cuda:0'), 'likelihood': tensor(-13.3750, device='cuda:0')}{'type': 'train', 'epoch': 43, 'loss': tensor(1.00000e+05 *
-       5.1280, device='cuda:0'), 'acc': tensor(0.9297), 'kl': tensor(1.00000e+05 *
-       5.1278, device='cuda:0'), 'likelihood': tensor(-15.6406, device='cuda:0')}{'type': 'validation', 'epoch': 43, 'loss': tensor(1.00000e+06 *
-       1.5378, device='cuda:0'), 'acc': tensor(0.9600), 'kl': tensor(1.00000e+06 *
-       1.5378, device='cuda:0'), 'likelihood': tensor(-11.2500, device='cuda:0')}{'type': 'train', 'epoch': 44, 'loss': tensor(1.00000e+05 *
-       5.1258, device='cuda:0'), 'acc': tensor(0.9339), 'kl': tensor(1.00000e+05 *
-       5.1256, device='cuda:0'), 'likelihood': tensor(-14.6979, device='cuda:0')}{'type': 'validation', 'epoch': 44, 'loss': tensor(1.00000e+06 *
-       1.5382, device='cuda:0'), 'acc': tensor(0.9357), 'kl': tensor(1.5382e+06, device='cuda:0'), 'likelihood': tensor(-15.8750, device='cuda:0')}{'type': 'train', 'epoch': 45, 'loss': tensor(1.00000e+05 *
-       5.1243, device='cuda:0'), 'acc': tensor(0.9375), 'kl': tensor(1.00000e+05 *
-       5.1242, device='cuda:0'), 'likelihood': tensor(-13.7135, device='cuda:0')}{'type': 'validation', 'epoch': 45, 'loss': tensor(1.5373e+06, device='cuda:0'), 'acc': tensor(0.9500), 'kl': tensor(1.5373e+06, device='cuda:0'), 'likelihood': tensor(-14., device='cuda:0')}{'type': 'train', 'epoch': 46, 'loss': tensor(1.00000e+05 *
-       5.1243, device='cuda:0'), 'acc': tensor(0.9411), 'kl': tensor(1.00000e+05 *
-       5.1241, device='cuda:0'), 'likelihood': tensor(-12.8229, device='cuda:0')}{'type': 'validation', 'epoch': 46, 'loss': tensor(1.00000e+06 *
-       1.5369, device='cuda:0'), 'acc': tensor(0.9386), 'kl': tensor(1.00000e+06 *
-       1.5369, device='cuda:0'), 'likelihood': tensor(-11.5000, device='cuda:0')}{'type': 'train', 'epoch': 47, 'loss': tensor(1.00000e+05 *
-       5.1227, device='cuda:0'), 'acc': tensor(0.9420), 'kl': tensor(1.00000e+05 *
-       5.1225, device='cuda:0'), 'likelihood': tensor(-12.2500, device='cuda:0')}{'type': 'validation', 'epoch': 47, 'loss': tensor(1.00000e+06 *
-       1.5384, device='cuda:0'), 'acc': tensor(0.9500), 'kl': tensor(1.00000e+06 *
-       1.5384, device='cuda:0'), 'likelihood': tensor(-11.8750, device='cuda:0')}{'type': 'train', 'epoch': 48, 'loss': tensor(1.00000e+05 *
-       5.1236, device='cuda:0'), 'acc': tensor(0.9393), 'kl': tensor(1.00000e+05 *
-       5.1234, device='cuda:0'), 'likelihood': tensor(-13.6406, device='cuda:0')}{'type': 'validation', 'epoch': 48, 'loss': tensor(1.00000e+06 *
-       1.5367, device='cuda:0'), 'acc': tensor(0.9329), 'kl': tensor(1.00000e+06 *
-       1.5367, device='cuda:0'), 'likelihood': tensor(-16.5000, device='cuda:0')}{'type': 'train', 'epoch': 49, 'loss': tensor(1.00000e+05 *
-       5.1242, device='cuda:0'), 'acc': tensor(0.9437), 'kl': tensor(1.00000e+05 *
-       5.1241, device='cuda:0'), 'likelihood': tensor(-12.5938, device='cuda:0')}{'type': 'validation', 'epoch': 49, 'loss': tensor(1.00000e+06 *
-       1.5359, device='cuda:0'), 'acc': tensor(0.9386), 'kl': tensor(1.00000e+06 *
-       1.5359, device='cuda:0'), 'likelihood': tensor(-16., device='cuda:0')}{'type': 'train', 'epoch': 50, 'loss': tensor(1.00000e+05 *
-       5.1224, device='cuda:0'), 'acc': tensor(0.9442), 'kl': tensor(1.00000e+05 *
-       5.1222, device='cuda:0'), 'likelihood': tensor(-12.0052, device='cuda:0')}{'type': 'validation', 'epoch': 50, 'loss': tensor(1.00000e+06 *
-       1.5368, device='cuda:0'), 'acc': tensor(0.9471), 'kl': tensor(1.00000e+06 *
-       1.5367, device='cuda:0'), 'likelihood': tensor(-13.8750, device='cuda:0')}{'type': 'train', 'epoch': 51, 'loss': tensor(1.00000e+05 *
-       5.1235, device='cuda:0'), 'acc': tensor(0.9480), 'kl': tensor(1.00000e+05 *
-       5.1234, device='cuda:0'), 'likelihood': tensor(-11.7604, device='cuda:0')}{'type': 'validation', 'epoch': 51, 'loss': tensor(1.00000e+06 *
-       1.5371, device='cuda:0'), 'acc': tensor(0.9386), 'kl': tensor(1.00000e+06 *
-       1.5371, device='cuda:0'), 'likelihood': tensor(-14.7500, device='cuda:0')}{'type': 'train', 'epoch': 52, 'loss': tensor(1.00000e+05 *
-       5.1228, device='cuda:0'), 'acc': tensor(0.9484), 'kl': tensor(1.00000e+05 *
-       5.1227, device='cuda:0'), 'likelihood': tensor(-11.4792, device='cuda:0')}{'type': 'validation', 'epoch': 52, 'loss': tensor(1.00000e+06 *
-       1.5358, device='cuda:0'), 'acc': tensor(0.9414), 'kl': tensor(1.5358e+06, device='cuda:0'), 'likelihood': tensor(-10.7500, device='cuda:0')}{'type': 'train', 'epoch': 53, 'loss': tensor(1.00000e+05 *
-       5.1211, device='cuda:0'), 'acc': tensor(0.9477), 'kl': tensor(1.00000e+05 *
-       5.1210, device='cuda:0'), 'likelihood': tensor(-10.4375, device='cuda:0')}{'type': 'validation', 'epoch': 53, 'loss': tensor(1.00000e+06 *
-       1.5363, device='cuda:0'), 'acc': tensor(0.9371), 'kl': tensor(1.00000e+06 *
-       1.5363, device='cuda:0'), 'likelihood': tensor(-15., device='cuda:0')}{'type': 'train', 'epoch': 54, 'loss': tensor(1.00000e+05 *
-       5.1225, device='cuda:0'), 'acc': tensor(0.9558), 'kl': tensor(1.00000e+05 *
-       5.1224, device='cuda:0'), 'likelihood': tensor(-9.1510, device='cuda:0')}{'type': 'validation', 'epoch': 54, 'loss': tensor(1.00000e+06 *
-       1.5365, device='cuda:0'), 'acc': tensor(0.9643), 'kl': tensor(1.00000e+06 *
-       1.5365, device='cuda:0'), 'likelihood': tensor(-5.6250, device='cuda:0')}{'type': 'train', 'epoch': 55, 'loss': tensor(1.00000e+05 *
-       5.1183, device='cuda:0'), 'acc': tensor(0.9502), 'kl': tensor(1.00000e+05 *
-       5.1182, device='cuda:0'), 'likelihood': tensor(-10.5938, device='cuda:0')}{'type': 'validation', 'epoch': 55, 'loss': tensor(1.00000e+06 *
-       1.5372, device='cuda:0'), 'acc': tensor(0.9571), 'kl': tensor(1.00000e+06 *
-       1.5372, device='cuda:0'), 'likelihood': tensor(-7.5000, device='cuda:0')}{'type': 'train', 'epoch': 56, 'loss': tensor(1.00000e+05 *
-       5.1187, device='cuda:0'), 'acc': tensor(0.9553), 'kl': tensor(5.1186e+05, device='cuda:0'), 'likelihood': tensor(-9.8281, device='cuda:0')}{'type': 'validation', 'epoch': 56, 'loss': tensor(1.5351e+06, device='cuda:0'), 'acc': tensor(0.9529), 'kl': tensor(1.00000e+06 *
-       1.5351, device='cuda:0'), 'likelihood': tensor(-11.3750, device='cuda:0')}{'type': 'train', 'epoch': 57, 'loss': tensor(1.00000e+05 *
-       5.1185, device='cuda:0'), 'acc': tensor(0.9540), 'kl': tensor(1.00000e+05 *
-       5.1184, device='cuda:0'), 'likelihood': tensor(-9.6250, device='cuda:0')}{'type': 'validation', 'epoch': 57, 'loss': tensor(1.00000e+06 *
-       1.5343, device='cuda:0'), 'acc': tensor(0.9614), 'kl': tensor(1.00000e+06 *
-       1.5343, device='cuda:0'), 'likelihood': tensor(-7.8750, device='cuda:0')}{'type': 'train', 'epoch': 58, 'loss': tensor(1.00000e+05 *
-       5.1192, device='cuda:0'), 'acc': tensor(0.9557), 'kl': tensor(1.00000e+05 *
-       5.1191, device='cuda:0'), 'likelihood': tensor(-9.1615, device='cuda:0')}{'type': 'validation', 'epoch': 58, 'loss': tensor(1.00000e+06 *
-       1.5357, device='cuda:0'), 'acc': tensor(0.9514), 'kl': tensor(1.00000e+06 *
-       1.5357, device='cuda:0'), 'likelihood': tensor(-12., device='cuda:0')}{'type': 'train', 'epoch': 59, 'loss': tensor(1.00000e+05 *
-       5.1189, device='cuda:0'), 'acc': tensor(0.9626), 'kl': tensor(1.00000e+05 *
-       5.1188, device='cuda:0'), 'likelihood': tensor(-7.0938, device='cuda:0')}{'type': 'validation', 'epoch': 59, 'loss': tensor(1.5341e+06, device='cuda:0'), 'acc': tensor(0.9514), 'kl': tensor(1.00000e+06 *
-       1.5341, device='cuda:0'), 'likelihood': tensor(-9.3750, device='cuda:0')}{'type': 'train', 'epoch': 60, 'loss': tensor(1.00000e+05 *
-       5.1164, device='cuda:0'), 'acc': tensor(0.9603), 'kl': tensor(1.00000e+05 *
-       5.1163, device='cuda:0'), 'likelihood': tensor(-8.7188, device='cuda:0')}{'type': 'validation', 'epoch': 60, 'loss': tensor(1.00000e+06 *
-       1.5352, device='cuda:0'), 'acc': tensor(0.9643), 'kl': tensor(1.00000e+06 *
-       1.5352, device='cuda:0'), 'likelihood': tensor(-11.3750, device='cuda:0')}{'type': 'train', 'epoch': 61, 'loss': tensor(1.00000e+05 *
-       5.1175, device='cuda:0'), 'acc': tensor(0.9595), 'kl': tensor(1.00000e+05 *
-       5.1174, device='cuda:0'), 'likelihood': tensor(-8.3594, device='cuda:0')}{'type': 'validation', 'epoch': 61, 'loss': tensor(1.00000e+06 *
-       1.5374, device='cuda:0'), 'acc': tensor(0.9471), 'kl': tensor(1.00000e+06 *
-       1.5374, device='cuda:0'), 'likelihood': tensor(-9.8750, device='cuda:0')}{'type': 'train', 'epoch': 62, 'loss': tensor(1.00000e+05 *
-       5.1165, device='cuda:0'), 'acc': tensor(0.9608), 'kl': tensor(5.1164e+05, device='cuda:0'), 'likelihood': tensor(-7.9583, device='cuda:0')}{'type': 'validation', 'epoch': 62, 'loss': tensor(1.5334e+06, device='cuda:0'), 'acc': tensor(0.9729), 'kl': tensor(1.00000e+06 *
-       1.5334, device='cuda:0'), 'likelihood': tensor(-5.1250, device='cuda:0')}{'type': 'train', 'epoch': 63, 'loss': tensor(1.00000e+05 *
-       5.1182, device='cuda:0'), 'acc': tensor(0.9652), 'kl': tensor(1.00000e+05 *
-       5.1181, device='cuda:0'), 'likelihood': tensor(-7.6042, device='cuda:0')}{'type': 'validation', 'epoch': 63, 'loss': tensor(1.00000e+06 *
-       1.5337, device='cuda:0'), 'acc': tensor(0.9643), 'kl': tensor(1.00000e+06 *
-       1.5337, device='cuda:0'), 'likelihood': tensor(-7.2500, device='cuda:0')}{'type': 'train', 'epoch': 64, 'loss': tensor(1.00000e+05 *
-       5.1191, device='cuda:0'), 'acc': tensor(0.9635), 'kl': tensor(1.00000e+05 *
-       5.1190, device='cuda:0'), 'likelihood': tensor(-8.2083, device='cuda:0')}{'type': 'validation', 'epoch': 64, 'loss': tensor(1.00000e+06 *
-       1.5343, device='cuda:0'), 'acc': tensor(0.9614), 'kl': tensor(1.00000e+06 *
-       1.5342, device='cuda:0'), 'likelihood': tensor(-7.6250, device='cuda:0')}{'type': 'train', 'epoch': 65, 'loss': tensor(1.00000e+05 *
-       5.1180, device='cuda:0'), 'acc': tensor(0.9643), 'kl': tensor(1.00000e+05 *
-       5.1179, device='cuda:0'), 'likelihood': tensor(-7.1458, device='cuda:0')}{'type': 'validation', 'epoch': 65, 'loss': tensor(1.5355e+06, device='cuda:0'), 'acc': tensor(0.9571), 'kl': tensor(1.00000e+06 *
-       1.5355, device='cuda:0'), 'likelihood': tensor(-9.1250, device='cuda:0')}{'type': 'train', 'epoch': 66, 'loss': tensor(5.1159e+05, device='cuda:0'), 'acc': tensor(0.9647), 'kl': tensor(1.00000e+05 *
-       5.1158, device='cuda:0'), 'likelihood': tensor(-7.2865, device='cuda:0')}{'type': 'validation', 'epoch': 66, 'loss': tensor(1.00000e+06 *
-       1.5336, device='cuda:0'), 'acc': tensor(0.9657), 'kl': tensor(1.00000e+06 *
-       1.5335, device='cuda:0'), 'likelihood': tensor(-4.7500, device='cuda:0')}{'type': 'train', 'epoch': 67, 'loss': tensor(5.1126e+05, device='cuda:0'), 'acc': tensor(0.9671), 'kl': tensor(1.00000e+05 *
-       5.1125, device='cuda:0'), 'likelihood': tensor(-6.3854, device='cuda:0')}{'type': 'validation', 'epoch': 67, 'loss': tensor(1.00000e+06 *
-       1.5336, device='cuda:0'), 'acc': tensor(0.9543), 'kl': tensor(1.00000e+06 *
-       1.5336, device='cuda:0'), 'likelihood': tensor(-9.3750, device='cuda:0')}{'type': 'train', 'epoch': 68, 'loss': tensor(1.00000e+05 *
-       5.1115, device='cuda:0'), 'acc': tensor(0.9599), 'kl': tensor(1.00000e+05 *
-       5.1114, device='cuda:0'), 'likelihood': tensor(-8.4792, device='cuda:0')}{'type': 'validation', 'epoch': 68, 'loss': tensor(1.00000e+06 *
-       1.5348, device='cuda:0'), 'acc': tensor(0.9543), 'kl': tensor(1.00000e+06 *
-       1.5348, device='cuda:0'), 'likelihood': tensor(-10.2500, device='cuda:0')}{'type': 'train', 'epoch': 69, 'loss': tensor(1.00000e+05 *
-       5.1136, device='cuda:0'), 'acc': tensor(0.9649), 'kl': tensor(1.00000e+05 *
-       5.1135, device='cuda:0'), 'likelihood': tensor(-6.7344, device='cuda:0')}{'type': 'validation', 'epoch': 69, 'loss': tensor(1.00000e+06 *
-       1.5341, device='cuda:0'), 'acc': tensor(0.9771), 'kl': tensor(1.00000e+06 *
-       1.5341, device='cuda:0'), 'likelihood': tensor(-5., device='cuda:0')}{'type': 'train', 'epoch': 70, 'loss': tensor(1.00000e+05 *
-       5.1137, device='cuda:0'), 'acc': tensor(0.9644), 'kl': tensor(1.00000e+05 *
-       5.1137, device='cuda:0'), 'likelihood': tensor(-7.8125, device='cuda:0')}{'type': 'validation', 'epoch': 70, 'loss': tensor(1.00000e+06 *
+       5.1471, device='cuda:0'), 'acc': tensor(0.3353), 'kl': tensor(1.00000e+05 *
+       5.1440, device='cuda:0'), 'likelihood': tensor(-304.9167, device='cuda:0')}{'type': 'validation', 'epoch': 0, 'loss': tensor(1.5450e+06, device='cuda:0'), 'acc': tensor(0.3586), 'kl': tensor(1.00000e+06 *
+       1.5447, device='cuda:0'), 'likelihood': tensor(-283.6250, device='cuda:0')}{'type': 'train', 'epoch': 1, 'loss': tensor(1.00000e+05 *
+       5.1509, device='cuda:0'), 'acc': tensor(0.3798), 'kl': tensor(1.00000e+05 *
+       5.1482, device='cuda:0'), 'likelihood': tensor(-266.7500, device='cuda:0')}{'type': 'validation', 'epoch': 1, 'loss': tensor(1.00000e+06 *
+       1.5442, device='cuda:0'), 'acc': tensor(0.4100), 'kl': tensor(1.00000e+06 *
+       1.5440, device='cuda:0'), 'likelihood': tensor(-230.2500, device='cuda:0')}{'type': 'train', 'epoch': 2, 'loss': tensor(1.00000e+05 *
+       5.1493, device='cuda:0'), 'acc': tensor(0.4284), 'kl': tensor(1.00000e+05 *
+       5.1470, device='cuda:0'), 'likelihood': tensor(-228.0677, device='cuda:0')}{'type': 'validation', 'epoch': 2, 'loss': tensor(1.00000e+06 *
+       1.5437, device='cuda:0'), 'acc': tensor(0.4614), 'kl': tensor(1.5435e+06, device='cuda:0'), 'likelihood': tensor(-204.2500, device='cuda:0')}{'type': 'train', 'epoch': 3, 'loss': tensor(1.00000e+05 *
+       5.1475, device='cuda:0'), 'acc': tensor(0.4622), 'kl': tensor(1.00000e+05 *
+       5.1454, device='cuda:0'), 'likelihood': tensor(-206.6875, device='cuda:0')}{'type': 'validation', 'epoch': 3, 'loss': tensor(1.00000e+06 *
+       1.5459, device='cuda:0'), 'acc': tensor(0.4943), 'kl': tensor(1.00000e+06 *
+       1.5457, device='cuda:0'), 'likelihood': tensor(-169.3750, device='cuda:0')}{'type': 'train', 'epoch': 4, 'loss': tensor(1.00000e+05 *
+       5.1476, device='cuda:0'), 'acc': tensor(0.5128), 'kl': tensor(1.00000e+05 *
+       5.1458, device='cuda:0'), 'likelihood': tensor(-175.6562, device='cuda:0')}{'type': 'validation', 'epoch': 4, 'loss': tensor(1.00000e+06 *
+       1.5451, device='cuda:0'), 'acc': tensor(0.5414), 'kl': tensor(1.00000e+06 *
+       1.5449, device='cuda:0'), 'likelihood': tensor(-154.5000, device='cuda:0')}{'type': 'train', 'epoch': 5, 'loss': tensor(1.00000e+05 *
+       5.1457, device='cuda:0'), 'acc': tensor(0.5590), 'kl': tensor(1.00000e+05 *
+       5.1442, device='cuda:0'), 'likelihood': tensor(-147.9271, device='cuda:0')}{'type': 'validation', 'epoch': 5, 'loss': tensor(1.00000e+06 *
+       1.5432, device='cuda:0'), 'acc': tensor(0.5700), 'kl': tensor(1.00000e+06 *
+       1.5431, device='cuda:0'), 'likelihood': tensor(-136.1250, device='cuda:0')}{'type': 'train', 'epoch': 6, 'loss': tensor(1.00000e+05 *
+       5.1462, device='cuda:0'), 'acc': tensor(0.5909), 'kl': tensor(1.00000e+05 *
+       5.1448, device='cuda:0'), 'likelihood': tensor(-133.8854, device='cuda:0')}{'type': 'validation', 'epoch': 6, 'loss': tensor(1.00000e+06 *
+       1.5442, device='cuda:0'), 'acc': tensor(0.6557), 'kl': tensor(1.5441e+06, device='cuda:0'), 'likelihood': tensor(-93.3750, device='cuda:0')}{'type': 'train', 'epoch': 7, 'loss': tensor(1.00000e+05 *
+       5.1462, device='cuda:0'), 'acc': tensor(0.6341), 'kl': tensor(1.00000e+05 *
+       5.1451, device='cuda:0'), 'likelihood': tensor(-112.9219, device='cuda:0')}{'type': 'validation', 'epoch': 7, 'loss': tensor(1.00000e+06 *
+       1.5431, device='cuda:0'), 'acc': tensor(0.6229), 'kl': tensor(1.00000e+06 *
+       1.5430, device='cuda:0'), 'likelihood': tensor(-111., device='cuda:0')}{'type': 'train', 'epoch': 8, 'loss': tensor(1.00000e+05 *
+       5.1434, device='cuda:0'), 'acc': tensor(0.6582), 'kl': tensor(1.00000e+05 *
+       5.1424, device='cuda:0'), 'likelihood': tensor(-102.9427, device='cuda:0')}{'type': 'validation', 'epoch': 8, 'loss': tensor(1.00000e+06 *
+       1.5421, device='cuda:0'), 'acc': tensor(0.6471), 'kl': tensor(1.00000e+06 *
+       1.5420, device='cuda:0'), 'likelihood': tensor(-98.7500, device='cuda:0')}{'type': 'train', 'epoch': 9, 'loss': tensor(1.00000e+05 *
+       5.1439, device='cuda:0'), 'acc': tensor(0.6954), 'kl': tensor(1.00000e+05 *
+       5.1431, device='cuda:0'), 'likelihood': tensor(-81.4375, device='cuda:0')}{'type': 'validation', 'epoch': 9, 'loss': tensor(1.00000e+06 *
+       1.5422, device='cuda:0'), 'acc': tensor(0.6843), 'kl': tensor(1.00000e+06 *
+       1.5421, device='cuda:0'), 'likelihood': tensor(-87.5000, device='cuda:0')}{'type': 'train', 'epoch': 10, 'loss': tensor(1.00000e+05 *
+       5.1471, device='cuda:0'), 'acc': tensor(0.7247), 'kl': tensor(1.00000e+05 *
+       5.1464, device='cuda:0'), 'likelihood': tensor(-73.8906, device='cuda:0')}{'type': 'validation', 'epoch': 10, 'loss': tensor(1.00000e+06 *
+       1.5428, device='cuda:0'), 'acc': tensor(0.7286), 'kl': tensor(1.00000e+06 *
+       1.5427, device='cuda:0'), 'likelihood': tensor(-75.3750, device='cuda:0')}{'type': 'train', 'epoch': 11, 'loss': tensor(1.00000e+05 *
+       5.1454, device='cuda:0'), 'acc': tensor(0.7587), 'kl': tensor(1.00000e+05 *
+       5.1448, device='cuda:0'), 'likelihood': tensor(-61.3333, device='cuda:0')}{'type': 'validation', 'epoch': 11, 'loss': tensor(1.00000e+06 *
+       1.5422, device='cuda:0'), 'acc': tensor(0.7729), 'kl': tensor(1.00000e+06 *
+       1.5422, device='cuda:0'), 'likelihood': tensor(-57.7500, device='cuda:0')}{'type': 'train', 'epoch': 12, 'loss': tensor(1.00000e+05 *
+       5.1413, device='cuda:0'), 'acc': tensor(0.7796), 'kl': tensor(1.00000e+05 *
+       5.1407, device='cuda:0'), 'likelihood': tensor(-54.8333, device='cuda:0')}{'type': 'validation', 'epoch': 12, 'loss': tensor(1.00000e+06 *
+       1.5424, device='cuda:0'), 'acc': tensor(0.7871), 'kl': tensor(1.00000e+06 *
+       1.5423, device='cuda:0'), 'likelihood': tensor(-50.1250, device='cuda:0')}{'type': 'train', 'epoch': 13, 'loss': tensor(1.00000e+05 *
+       5.1392, device='cuda:0'), 'acc': tensor(0.7977), 'kl': tensor(1.00000e+05 *
+       5.1387, device='cuda:0'), 'likelihood': tensor(-51.0833, device='cuda:0')}{'type': 'validation', 'epoch': 13, 'loss': tensor(1.00000e+06 *
+       1.5419, device='cuda:0'), 'acc': tensor(0.8157), 'kl': tensor(1.00000e+06 *
+       1.5419, device='cuda:0'), 'likelihood': tensor(-35.5000, device='cuda:0')}{'type': 'train', 'epoch': 14, 'loss': tensor(1.00000e+05 *
+       5.1398, device='cuda:0'), 'acc': tensor(0.8123), 'kl': tensor(1.00000e+05 *
+       5.1393, device='cuda:0'), 'likelihood': tensor(-45.8906, device='cuda:0')}{'type': 'validation', 'epoch': 14, 'loss': tensor(1.00000e+06 *
+       1.5421, device='cuda:0'), 'acc': tensor(0.8329), 'kl': tensor(1.00000e+06 *
+       1.5420, device='cuda:0'), 'likelihood': tensor(-37., device='cuda:0')}{'type': 'train', 'epoch': 15, 'loss': tensor(1.00000e+05 *
+       5.1420, device='cuda:0'), 'acc': tensor(0.8300), 'kl': tensor(1.00000e+05 *
+       5.1416, device='cuda:0'), 'likelihood': tensor(-39.1562, device='cuda:0')}{'type': 'validation', 'epoch': 15, 'loss': tensor(1.00000e+06 *
+       1.5428, device='cuda:0'), 'acc': tensor(0.8514), 'kl': tensor(1.00000e+06 *
+       1.5428, device='cuda:0'), 'likelihood': tensor(-30.6250, device='cuda:0')}{'type': 'train', 'epoch': 16, 'loss': tensor(1.00000e+05 *
+       5.1386, device='cuda:0'), 'acc': tensor(0.8438), 'kl': tensor(1.00000e+05 *
+       5.1383, device='cuda:0'), 'likelihood': tensor(-36.4479, device='cuda:0')}{'type': 'validation', 'epoch': 16, 'loss': tensor(1.00000e+06 *
+       1.5408, device='cuda:0'), 'acc': tensor(0.8629), 'kl': tensor(1.00000e+06 *
+       1.5408, device='cuda:0'), 'likelihood': tensor(-27.8750, device='cuda:0')}{'type': 'train', 'epoch': 17, 'loss': tensor(1.00000e+05 *
+       5.1400, device='cuda:0'), 'acc': tensor(0.8564), 'kl': tensor(1.00000e+05 *
+       5.1396, device='cuda:0'), 'likelihood': tensor(-32.7969, device='cuda:0')}{'type': 'validation', 'epoch': 17, 'loss': tensor(1.00000e+06 *
+       1.5420, device='cuda:0'), 'acc': tensor(0.8600), 'kl': tensor(1.00000e+06 *
+       1.5420, device='cuda:0'), 'likelihood': tensor(-31.7500, device='cuda:0')}{'type': 'train', 'epoch': 18, 'loss': tensor(1.00000e+05 *
+       5.1380, device='cuda:0'), 'acc': tensor(0.8655), 'kl': tensor(1.00000e+05 *
+       5.1377, device='cuda:0'), 'likelihood': tensor(-30.0625, device='cuda:0')}{'type': 'validation', 'epoch': 18, 'loss': tensor(1.00000e+06 *
+       1.5427, device='cuda:0'), 'acc': tensor(0.8614), 'kl': tensor(1.00000e+06 *
+       1.5427, device='cuda:0'), 'likelihood': tensor(-32., device='cuda:0')}{'type': 'train', 'epoch': 19, 'loss': tensor(1.00000e+05 *
+       5.1349, device='cuda:0'), 'acc': tensor(0.8715), 'kl': tensor(1.00000e+05 *
+       5.1346, device='cuda:0'), 'likelihood': tensor(-28.8750, device='cuda:0')}{'type': 'validation', 'epoch': 19, 'loss': tensor(1.00000e+06 *
+       1.5396, device='cuda:0'), 'acc': tensor(0.8786), 'kl': tensor(1.00000e+06 *
+       1.5396, device='cuda:0'), 'likelihood': tensor(-28., device='cuda:0')}{'type': 'train', 'epoch': 20, 'loss': tensor(5.1378e+05, device='cuda:0'), 'acc': tensor(0.8881), 'kl': tensor(1.00000e+05 *
+       5.1376, device='cuda:0'), 'likelihood': tensor(-22.7969, device='cuda:0')}{'type': 'validation', 'epoch': 20, 'loss': tensor(1.00000e+06 *
+       1.5398, device='cuda:0'), 'acc': tensor(0.9000), 'kl': tensor(1.00000e+06 *
+       1.5397, device='cuda:0'), 'likelihood': tensor(-20.1250, device='cuda:0')}{'type': 'train', 'epoch': 21, 'loss': tensor(5.1375e+05, device='cuda:0'), 'acc': tensor(0.8928), 'kl': tensor(1.00000e+05 *
+       5.1372, device='cuda:0'), 'likelihood': tensor(-22.3177, device='cuda:0')}{'type': 'validation', 'epoch': 21, 'loss': tensor(1.00000e+06 *
+       1.5401, device='cuda:0'), 'acc': tensor(0.8986), 'kl': tensor(1.5401e+06, device='cuda:0'), 'likelihood': tensor(-19.6250, device='cuda:0')}{'type': 'train', 'epoch': 22, 'loss': tensor(1.00000e+05 *
+       5.1356, device='cuda:0'), 'acc': tensor(0.9054), 'kl': tensor(1.00000e+05 *
+       5.1354, device='cuda:0'), 'likelihood': tensor(-18.8177, device='cuda:0')}{'type': 'validation', 'epoch': 22, 'loss': tensor(1.00000e+06 *
+       1.5409, device='cuda:0'), 'acc': tensor(0.8971), 'kl': tensor(1.00000e+06 *
+       1.5408, device='cuda:0'), 'likelihood': tensor(-20.6250, device='cuda:0')}{'type': 'train', 'epoch': 23, 'loss': tensor(1.00000e+05 *
+       5.1364, device='cuda:0'), 'acc': tensor(0.9047), 'kl': tensor(1.00000e+05 *
+       5.1362, device='cuda:0'), 'likelihood': tensor(-18.1979, device='cuda:0')}{'type': 'validation', 'epoch': 23, 'loss': tensor(1.00000e+06 *
+       1.5410, device='cuda:0'), 'acc': tensor(0.9043), 'kl': tensor(1.5409e+06, device='cuda:0'), 'likelihood': tensor(-22.6250, device='cuda:0')}{'type': 'train', 'epoch': 24, 'loss': tensor(1.00000e+05 *
+       5.1374, device='cuda:0'), 'acc': tensor(0.9200), 'kl': tensor(1.00000e+05 *
+       5.1372, device='cuda:0'), 'likelihood': tensor(-17.0417, device='cuda:0')}{'type': 'validation', 'epoch': 24, 'loss': tensor(1.00000e+06 *
+       1.5405, device='cuda:0'), 'acc': tensor(0.8971), 'kl': tensor(1.00000e+06 *
+       1.5405, device='cuda:0'), 'likelihood': tensor(-21.8750, device='cuda:0')}{'type': 'train', 'epoch': 25, 'loss': tensor(1.00000e+05 *
+       5.1316, device='cuda:0'), 'acc': tensor(0.9233), 'kl': tensor(1.00000e+05 *
+       5.1315, device='cuda:0'), 'likelihood': tensor(-15.2865, device='cuda:0')}{'type': 'validation', 'epoch': 25, 'loss': tensor(1.00000e+06 *
+       1.5419, device='cuda:0'), 'acc': tensor(0.9214), 'kl': tensor(1.00000e+06 *
+       1.5419, device='cuda:0'), 'likelihood': tensor(-18., device='cuda:0')}{'type': 'train', 'epoch': 26, 'loss': tensor(1.00000e+05 *
+       5.1344, device='cuda:0'), 'acc': tensor(0.9245), 'kl': tensor(1.00000e+05 *
+       5.1342, device='cuda:0'), 'likelihood': tensor(-14.5521, device='cuda:0')}{'type': 'validation', 'epoch': 26, 'loss': tensor(1.00000e+06 *
+       1.5398, device='cuda:0'), 'acc': tensor(0.9186), 'kl': tensor(1.00000e+06 *
+       1.5398, device='cuda:0'), 'likelihood': tensor(-15., device='cuda:0')}{'type': 'train', 'epoch': 27, 'loss': tensor(1.00000e+05 *
+       5.1316, device='cuda:0'), 'acc': tensor(0.9289), 'kl': tensor(1.00000e+05 *
+       5.1315, device='cuda:0'), 'likelihood': tensor(-13.4583, device='cuda:0')}{'type': 'validation', 'epoch': 27, 'loss': tensor(1.00000e+06 *
+       1.5400, device='cuda:0'), 'acc': tensor(0.9114), 'kl': tensor(1.00000e+06 *
+       1.5400, device='cuda:0'), 'likelihood': tensor(-16.3750, device='cuda:0')}{'type': 'train', 'epoch': 28, 'loss': tensor(1.00000e+05 *
+       5.1329, device='cuda:0'), 'acc': tensor(0.9271), 'kl': tensor(1.00000e+05 *
+       5.1327, device='cuda:0'), 'likelihood': tensor(-14.0365, device='cuda:0')}{'type': 'validation', 'epoch': 28, 'loss': tensor(1.5403e+06, device='cuda:0'), 'acc': tensor(0.9486), 'kl': tensor(1.00000e+06 *
+       1.5403, device='cuda:0'), 'likelihood': tensor(-7.1250, device='cuda:0')}{'type': 'train', 'epoch': 29, 'loss': tensor(1.00000e+05 *
+       5.1323, device='cuda:0'), 'acc': tensor(0.9308), 'kl': tensor(1.00000e+05 *
+       5.1321, device='cuda:0'), 'likelihood': tensor(-13.5052, device='cuda:0')}{'type': 'validation', 'epoch': 29, 'loss': tensor(1.00000e+06 *
+       1.5395, device='cuda:0'), 'acc': tensor(0.9400), 'kl': tensor(1.00000e+06 *
+       1.5395, device='cuda:0'), 'likelihood': tensor(-13.2500, device='cuda:0')}{'type': 'train', 'epoch': 30, 'loss': tensor(1.00000e+05 *
+       5.1297, device='cuda:0'), 'acc': tensor(0.9332), 'kl': tensor(1.00000e+05 *
+       5.1296, device='cuda:0'), 'likelihood': tensor(-12.8385, device='cuda:0')}{'type': 'validation', 'epoch': 30, 'loss': tensor(1.00000e+06 *
+       1.5406, device='cuda:0'), 'acc': tensor(0.9314), 'kl': tensor(1.5406e+06, device='cuda:0'), 'likelihood': tensor(-11.3750, device='cuda:0')}{'type': 'train', 'epoch': 31, 'loss': tensor(1.00000e+05 *
+       5.1318, device='cuda:0'), 'acc': tensor(0.9417), 'kl': tensor(1.00000e+05 *
+       5.1317, device='cuda:0'), 'likelihood': tensor(-11.9115, device='cuda:0')}{'type': 'validation', 'epoch': 31, 'loss': tensor(1.00000e+06 *
+       1.5382, device='cuda:0'), 'acc': tensor(0.9500), 'kl': tensor(1.00000e+06 *
+       1.5382, device='cuda:0'), 'likelihood': tensor(-10.5000, device='cuda:0')}{'type': 'train', 'epoch': 32, 'loss': tensor(1.00000e+05 *
+       5.1294, device='cuda:0'), 'acc': tensor(0.9429), 'kl': tensor(1.00000e+05 *
+       5.1293, device='cuda:0'), 'likelihood': tensor(-10.8490, device='cuda:0')}{'type': 'validation', 'epoch': 32, 'loss': tensor(1.00000e+06 *
+       1.5386, device='cuda:0'), 'acc': tensor(0.9443), 'kl': tensor(1.00000e+06 *
+       1.5386, device='cuda:0'), 'likelihood': tensor(-9.6250, device='cuda:0')}{'type': 'train', 'epoch': 33, 'loss': tensor(1.00000e+05 *
+       5.1279, device='cuda:0'), 'acc': tensor(0.9455), 'kl': tensor(1.00000e+05 *
+       5.1277, device='cuda:0'), 'likelihood': tensor(-10.2708, device='cuda:0')}{'type': 'validation', 'epoch': 33, 'loss': tensor(1.00000e+06 *
+       1.5399, device='cuda:0'), 'acc': tensor(0.9486), 'kl': tensor(1.5399e+06, device='cuda:0'), 'likelihood': tensor(-9.7500, device='cuda:0')}{'type': 'train', 'epoch': 34, 'loss': tensor(1.00000e+05 *
+       5.1290, device='cuda:0'), 'acc': tensor(0.9536), 'kl': tensor(1.00000e+05 *
+       5.1289, device='cuda:0'), 'likelihood': tensor(-8.4427, device='cuda:0')}{'type': 'validation', 'epoch': 34, 'loss': tensor(1.00000e+06 *
+       1.5389, device='cuda:0'), 'acc': tensor(0.9571), 'kl': tensor(1.00000e+06 *
+       1.5389, device='cuda:0'), 'likelihood': tensor(-6.1250, device='cuda:0')}{'type': 'train', 'epoch': 35, 'loss': tensor(1.00000e+05 *
+       5.1298, device='cuda:0'), 'acc': tensor(0.9512), 'kl': tensor(1.00000e+05 *
+       5.1297, device='cuda:0'), 'likelihood': tensor(-10.0573, device='cuda:0')}{'type': 'validation', 'epoch': 35, 'loss': tensor(1.00000e+06 *
+       1.5375, device='cuda:0'), 'acc': tensor(0.9500), 'kl': tensor(1.00000e+06 *
+       1.5375, device='cuda:0'), 'likelihood': tensor(-9.3750, device='cuda:0')}{'type': 'train', 'epoch': 36, 'loss': tensor(1.00000e+05 *
+       5.1298, device='cuda:0'), 'acc': tensor(0.9589), 'kl': tensor(1.00000e+05 *
+       5.1298, device='cuda:0'), 'likelihood': tensor(-7.9948, device='cuda:0')}{'type': 'validation', 'epoch': 36, 'loss': tensor(1.00000e+06 *
+       1.5389, device='cuda:0'), 'acc': tensor(0.9514), 'kl': tensor(1.00000e+06 *
+       1.5389, device='cuda:0'), 'likelihood': tensor(-7.8750, device='cuda:0')}{'type': 'train', 'epoch': 37, 'loss': tensor(5.1313e+05, device='cuda:0'), 'acc': tensor(0.9558), 'kl': tensor(1.00000e+05 *
+       5.1312, device='cuda:0'), 'likelihood': tensor(-7.9219, device='cuda:0')}{'type': 'validation', 'epoch': 37, 'loss': tensor(1.5375e+06, device='cuda:0'), 'acc': tensor(0.9514), 'kl': tensor(1.00000e+06 *
+       1.5375, device='cuda:0'), 'likelihood': tensor(-9.5000, device='cuda:0')}{'type': 'train', 'epoch': 38, 'loss': tensor(1.00000e+05 *
+       5.1275, device='cuda:0'), 'acc': tensor(0.9561), 'kl': tensor(1.00000e+05 *
+       5.1274, device='cuda:0'), 'likelihood': tensor(-8.8385, device='cuda:0')}{'type': 'validation', 'epoch': 38, 'loss': tensor(1.00000e+06 *
+       1.5379, device='cuda:0'), 'acc': tensor(0.9629), 'kl': tensor(1.00000e+06 *
+       1.5379, device='cuda:0'), 'likelihood': tensor(-5.6250, device='cuda:0')}{'type': 'train', 'epoch': 39, 'loss': tensor(1.00000e+05 *
+       5.1255, device='cuda:0'), 'acc': tensor(0.9574), 'kl': tensor(1.00000e+05 *
+       5.1254, device='cuda:0'), 'likelihood': tensor(-8.1042, device='cuda:0')}{'type': 'validation', 'epoch': 39, 'loss': tensor(1.00000e+06 *
+       1.5394, device='cuda:0'), 'acc': tensor(0.9714), 'kl': tensor(1.00000e+06 *
+       1.5394, device='cuda:0'), 'likelihood': tensor(-7., device='cuda:0')}{'type': 'train', 'epoch': 40, 'loss': tensor(1.00000e+05 *
+       5.1278, device='cuda:0'), 'acc': tensor(0.9612), 'kl': tensor(1.00000e+05 *
+       5.1277, device='cuda:0'), 'likelihood': tensor(-6.7656, device='cuda:0')}{'type': 'validation', 'epoch': 40, 'loss': tensor(1.00000e+06 *
+       1.5391, device='cuda:0'), 'acc': tensor(0.9686), 'kl': tensor(1.00000e+06 *
+       1.5391, device='cuda:0'), 'likelihood': tensor(-3.8750, device='cuda:0')}{'type': 'train', 'epoch': 41, 'loss': tensor(1.00000e+05 *
+       5.1252, device='cuda:0'), 'acc': tensor(0.9653), 'kl': tensor(5.1252e+05, device='cuda:0'), 'likelihood': tensor(-6.3229, device='cuda:0')}{'type': 'validation', 'epoch': 41, 'loss': tensor(1.5388e+06, device='cuda:0'), 'acc': tensor(0.9657), 'kl': tensor(1.00000e+06 *
+       1.5388, device='cuda:0'), 'likelihood': tensor(-4.7500, device='cuda:0')}{'type': 'train', 'epoch': 42, 'loss': tensor(1.00000e+05 *
+       5.1259, device='cuda:0'), 'acc': tensor(0.9639), 'kl': tensor(1.00000e+05 *
+       5.1258, device='cuda:0'), 'likelihood': tensor(-6.6406, device='cuda:0')}{'type': 'validation', 'epoch': 42, 'loss': tensor(1.00000e+06 *
+       1.5387, device='cuda:0'), 'acc': tensor(0.9643), 'kl': tensor(1.00000e+06 *
+       1.5387, device='cuda:0'), 'likelihood': tensor(-6.7500, device='cuda:0')}{'type': 'train', 'epoch': 43, 'loss': tensor(1.00000e+05 *
+       5.1255, device='cuda:0'), 'acc': tensor(0.9657), 'kl': tensor(1.00000e+05 *
+       5.1254, device='cuda:0'), 'likelihood': tensor(-6.4844, device='cuda:0')}{'type': 'validation', 'epoch': 43, 'loss': tensor(1.00000e+06 *
+       1.5357, device='cuda:0'), 'acc': tensor(0.9743), 'kl': tensor(1.00000e+06 *
+       1.5357, device='cuda:0'), 'likelihood': tensor(-4., device='cuda:0')}{'type': 'train', 'epoch': 44, 'loss': tensor(1.00000e+05 *
+       5.1252, device='cuda:0'), 'acc': tensor(0.9627), 'kl': tensor(1.00000e+05 *
+       5.1251, device='cuda:0'), 'likelihood': tensor(-6.8542, device='cuda:0')}{'type': 'validation', 'epoch': 44, 'loss': tensor(1.00000e+06 *
+       1.5381, device='cuda:0'), 'acc': tensor(0.9629), 'kl': tensor(1.00000e+06 *
+       1.5381, device='cuda:0'), 'likelihood': tensor(-9.8750, device='cuda:0')}{'type': 'train', 'epoch': 45, 'loss': tensor(1.00000e+05 *
+       5.1272, device='cuda:0'), 'acc': tensor(0.9695), 'kl': tensor(5.1271e+05, device='cuda:0'), 'likelihood': tensor(-5.4167, device='cuda:0')}{'type': 'validation', 'epoch': 45, 'loss': tensor(1.00000e+06 *
+       1.5352, device='cuda:0'), 'acc': tensor(0.9657), 'kl': tensor(1.00000e+06 *
+       1.5352, device='cuda:0'), 'likelihood': tensor(-5.8750, device='cuda:0')}{'type': 'train', 'epoch': 46, 'loss': tensor(1.00000e+05 *
+       5.1255, device='cuda:0'), 'acc': tensor(0.9713), 'kl': tensor(1.00000e+05 *
+       5.1254, device='cuda:0'), 'likelihood': tensor(-5.1406, device='cuda:0')}{'type': 'validation', 'epoch': 46, 'loss': tensor(1.00000e+06 *
+       1.5376, device='cuda:0'), 'acc': tensor(0.9629), 'kl': tensor(1.00000e+06 *
+       1.5376, device='cuda:0'), 'likelihood': tensor(-7.2500, device='cuda:0')}{'type': 'train', 'epoch': 47, 'loss': tensor(1.00000e+05 *
+       5.1235, device='cuda:0'), 'acc': tensor(0.9669), 'kl': tensor(1.00000e+05 *
+       5.1234, device='cuda:0'), 'likelihood': tensor(-5.3802, device='cuda:0')}{'type': 'validation', 'epoch': 47, 'loss': tensor(1.00000e+06 *
+       1.5364, device='cuda:0'), 'acc': tensor(0.9657), 'kl': tensor(1.00000e+06 *
+       1.5363, device='cuda:0'), 'likelihood': tensor(-6., device='cuda:0')}{'type': 'train', 'epoch': 48, 'loss': tensor(1.00000e+05 *
+       5.1250, device='cuda:0'), 'acc': tensor(0.9698), 'kl': tensor(1.00000e+05 *
+       5.1249, device='cuda:0'), 'likelihood': tensor(-5.4115, device='cuda:0')}{'type': 'validation', 'epoch': 48, 'loss': tensor(1.00000e+06 *
+       1.5368, device='cuda:0'), 'acc': tensor(0.9729), 'kl': tensor(1.00000e+06 *
+       1.5368, device='cuda:0'), 'likelihood': tensor(-7.5000, device='cuda:0')}{'type': 'train', 'epoch': 49, 'loss': tensor(1.00000e+05 *
+       5.1240, device='cuda:0'), 'acc': tensor(0.9707), 'kl': tensor(1.00000e+05 *
+       5.1239, device='cuda:0'), 'likelihood': tensor(-5.4010, device='cuda:0')}{'type': 'validation', 'epoch': 49, 'loss': tensor(1.00000e+06 *
+       1.5379, device='cuda:0'), 'acc': tensor(0.9629), 'kl': tensor(1.00000e+06 *
+       1.5379, device='cuda:0'), 'likelihood': tensor(-7.5000, device='cuda:0')}{'type': 'train', 'epoch': 50, 'loss': tensor(1.00000e+05 *
+       5.1252, device='cuda:0'), 'acc': tensor(0.9729), 'kl': tensor(1.00000e+05 *
+       5.1251, device='cuda:0'), 'likelihood': tensor(-4.7708, device='cuda:0')}{'type': 'validation', 'epoch': 50, 'loss': tensor(1.00000e+06 *
+       1.5364, device='cuda:0'), 'acc': tensor(0.9614), 'kl': tensor(1.00000e+06 *
+       1.5364, device='cuda:0'), 'likelihood': tensor(-6.3750, device='cuda:0')}{'type': 'train', 'epoch': 51, 'loss': tensor(1.00000e+05 *
+       5.1233, device='cuda:0'), 'acc': tensor(0.9716), 'kl': tensor(1.00000e+05 *
+       5.1233, device='cuda:0'), 'likelihood': tensor(-5.1615, device='cuda:0')}{'type': 'validation', 'epoch': 51, 'loss': tensor(1.00000e+06 *
        1.5349, device='cuda:0'), 'acc': tensor(0.9743), 'kl': tensor(1.00000e+06 *
-       1.5349, device='cuda:0'), 'likelihood': tensor(-4.3750, device='cuda:0')}{'type': 'train', 'epoch': 71, 'loss': tensor(1.00000e+05 *
-       5.1137, device='cuda:0'), 'acc': tensor(0.9719), 'kl': tensor(1.00000e+05 *
-       5.1137, device='cuda:0'), 'likelihood': tensor(-5.5833, device='cuda:0')}{'type': 'validation', 'epoch': 71, 'loss': tensor(1.00000e+06 *
-       1.5331, device='cuda:0'), 'acc': tensor(0.9643), 'kl': tensor(1.00000e+06 *
-       1.5331, device='cuda:0'), 'likelihood': tensor(-6.7500, device='cuda:0')}{'type': 'train', 'epoch': 72, 'loss': tensor(1.00000e+05 *
-       5.1142, device='cuda:0'), 'acc': tensor(0.9707), 'kl': tensor(1.00000e+05 *
-       5.1141, device='cuda:0'), 'likelihood': tensor(-5.9740, device='cuda:0')}{'type': 'validation', 'epoch': 72, 'loss': tensor(1.00000e+06 *
-       1.5327, device='cuda:0'), 'acc': tensor(0.9743), 'kl': tensor(1.00000e+06 *
-       1.5327, device='cuda:0'), 'likelihood': tensor(-4.3750, device='cuda:0')}{'type': 'train', 'epoch': 73, 'loss': tensor(1.00000e+05 *
-       5.1148, device='cuda:0'), 'acc': tensor(0.9726), 'kl': tensor(1.00000e+05 *
-       5.1147, device='cuda:0'), 'likelihood': tensor(-5.5000, device='cuda:0')}{'type': 'validation', 'epoch': 73, 'loss': tensor(1.00000e+06 *
-       1.5326, device='cuda:0'), 'acc': tensor(0.9714), 'kl': tensor(1.00000e+06 *
-       1.5326, device='cuda:0'), 'likelihood': tensor(-7.3750, device='cuda:0')}{'type': 'train', 'epoch': 74, 'loss': tensor(1.00000e+05 *
-       5.1081, device='cuda:0'), 'acc': tensor(0.9765), 'kl': tensor(1.00000e+05 *
-       5.1081, device='cuda:0'), 'likelihood': tensor(-3.9375, device='cuda:0')}{'type': 'validation', 'epoch': 74, 'loss': tensor(1.00000e+06 *
-       1.5312, device='cuda:0'), 'acc': tensor(0.9686), 'kl': tensor(1.00000e+06 *
-       1.5312, device='cuda:0'), 'likelihood': tensor(-4.7500, device='cuda:0')}{'type': 'train', 'epoch': 75, 'loss': tensor(5.1101e+05, device='cuda:0'), 'acc': tensor(0.9738), 'kl': tensor(1.00000e+05 *
-       5.1100, device='cuda:0'), 'likelihood': tensor(-5.3958, device='cuda:0')}{'type': 'validation', 'epoch': 75, 'loss': tensor(1.00000e+06 *
-       1.5335, device='cuda:0'), 'acc': tensor(0.9743), 'kl': tensor(1.00000e+06 *
-       1.5335, device='cuda:0'), 'likelihood': tensor(-5.3750, device='cuda:0')}{'type': 'train', 'epoch': 76, 'loss': tensor(1.00000e+05 *
-       5.1126, device='cuda:0'), 'acc': tensor(0.9721), 'kl': tensor(1.00000e+05 *
-       5.1126, device='cuda:0'), 'likelihood': tensor(-5.7188, device='cuda:0')}{'type': 'validation', 'epoch': 76, 'loss': tensor(1.00000e+06 *
-       1.5343, device='cuda:0'), 'acc': tensor(0.9671), 'kl': tensor(1.00000e+06 *
-       1.5343, device='cuda:0'), 'likelihood': tensor(-6.8750, device='cuda:0')}{'type': 'train', 'epoch': 77, 'loss': tensor(1.00000e+05 *
-       5.1105, device='cuda:0'), 'acc': tensor(0.9712), 'kl': tensor(5.1105e+05, device='cuda:0'), 'likelihood': tensor(-6.0625, device='cuda:0')}{'type': 'validation', 'epoch': 77, 'loss': tensor(1.00000e+06 *
-       1.5322, device='cuda:0'), 'acc': tensor(0.9729), 'kl': tensor(1.00000e+06 *
-       1.5322, device='cuda:0'), 'likelihood': tensor(-5., device='cuda:0')}{'type': 'train', 'epoch': 78, 'loss': tensor(1.00000e+05 *
-       5.1088, device='cuda:0'), 'acc': tensor(0.9728), 'kl': tensor(1.00000e+05 *
-       5.1088, device='cuda:0'), 'likelihood': tensor(-5.8646, device='cuda:0')}{'type': 'validation', 'epoch': 78, 'loss': tensor(1.00000e+06 *
-       1.5315, device='cuda:0'), 'acc': tensor(0.9657), 'kl': tensor(1.00000e+06 *
-       1.5315, device='cuda:0'), 'likelihood': tensor(-4.3750, device='cuda:0')}{'type': 'train', 'epoch': 79, 'loss': tensor(1.00000e+05 *
-       5.1109, device='cuda:0'), 'acc': tensor(0.9739), 'kl': tensor(1.00000e+05 *
-       5.1109, device='cuda:0'), 'likelihood': tensor(-4.9115, device='cuda:0')}{'type': 'validation', 'epoch': 79, 'loss': tensor(1.00000e+06 *
-       1.5330, device='cuda:0'), 'acc': tensor(0.9743), 'kl': tensor(1.00000e+06 *
-       1.5330, device='cuda:0'), 'likelihood': tensor(-4.2500, device='cuda:0')}{'type': 'train', 'epoch': 80, 'loss': tensor(1.00000e+05 *
-       5.1082, device='cuda:0'), 'acc': tensor(0.9729), 'kl': tensor(1.00000e+05 *
-       5.1082, device='cuda:0'), 'likelihood': tensor(-5.5312, device='cuda:0')}{'type': 'validation', 'epoch': 80, 'loss': tensor(1.00000e+06 *
-       1.5327, device='cuda:0'), 'acc': tensor(0.9714), 'kl': tensor(1.00000e+06 *
-       1.5327, device='cuda:0'), 'likelihood': tensor(-5.5000, device='cuda:0')}{'type': 'train', 'epoch': 81, 'loss': tensor(1.00000e+05 *
-       5.1086, device='cuda:0'), 'acc': tensor(0.9741), 'kl': tensor(1.00000e+05 *
-       5.1085, device='cuda:0'), 'likelihood': tensor(-4.9115, device='cuda:0')}{'type': 'validation', 'epoch': 81, 'loss': tensor(1.00000e+06 *
-       1.5320, device='cuda:0'), 'acc': tensor(0.9743), 'kl': tensor(1.00000e+06 *
-       1.5320, device='cuda:0'), 'likelihood': tensor(-7.3750, device='cuda:0')}{'type': 'train', 'epoch': 82, 'loss': tensor(1.00000e+05 *
-       5.1089, device='cuda:0'), 'acc': tensor(0.9746), 'kl': tensor(5.1089e+05, device='cuda:0'), 'likelihood': tensor(-5.3281, device='cuda:0')}{'type': 'validation', 'epoch': 82, 'loss': tensor(1.5329e+06, device='cuda:0'), 'acc': tensor(0.9829), 'kl': tensor(1.00000e+06 *
-       1.5329, device='cuda:0'), 'likelihood': tensor(-2.5000, device='cuda:0')}{'type': 'train', 'epoch': 83, 'loss': tensor(1.00000e+05 *
-       5.1026, device='cuda:0'), 'acc': tensor(0.9763), 'kl': tensor(1.00000e+05 *
-       5.1026, device='cuda:0'), 'likelihood': tensor(-4.7760, device='cuda:0')}{'type': 'validation', 'epoch': 83, 'loss': tensor(1.00000e+06 *
-       1.5318, device='cuda:0'), 'acc': tensor(0.9800), 'kl': tensor(1.00000e+06 *
-       1.5318, device='cuda:0'), 'likelihood': tensor(-3.6250, device='cuda:0')}{'type': 'train', 'epoch': 84, 'loss': tensor(1.00000e+05 *
-       5.1060, device='cuda:0'), 'acc': tensor(0.9747), 'kl': tensor(1.00000e+05 *
-       5.1060, device='cuda:0'), 'likelihood': tensor(-5.2031, device='cuda:0')}{'type': 'validation', 'epoch': 84, 'loss': tensor(1.00000e+06 *
-       1.5322, device='cuda:0'), 'acc': tensor(0.9757), 'kl': tensor(1.00000e+06 *
-       1.5322, device='cuda:0'), 'likelihood': tensor(-4.8750, device='cuda:0')}{'type': 'train', 'epoch': 85, 'loss': tensor(1.00000e+05 *
-       5.1041, device='cuda:0'), 'acc': tensor(0.9760), 'kl': tensor(1.00000e+05 *
-       5.1040, device='cuda:0'), 'likelihood': tensor(-4.5000, device='cuda:0')}{'type': 'validation', 'epoch': 85, 'loss': tensor(1.00000e+06 *
-       1.5312, device='cuda:0'), 'acc': tensor(0.9814), 'kl': tensor(1.5312e+06, device='cuda:0'), 'likelihood': tensor(-3.6250, device='cuda:0')}{'type': 'train', 'epoch': 86, 'loss': tensor(1.00000e+05 *
-       5.1053, device='cuda:0'), 'acc': tensor(0.9780), 'kl': tensor(1.00000e+05 *
-       5.1053, device='cuda:0'), 'likelihood': tensor(-4.0990, device='cuda:0')}{'type': 'validation', 'epoch': 86, 'loss': tensor(1.5313e+06, device='cuda:0'), 'acc': tensor(0.9743), 'kl': tensor(1.00000e+06 *
-       1.5313, device='cuda:0'), 'likelihood': tensor(-5.6250, device='cuda:0')}{'type': 'train', 'epoch': 87, 'loss': tensor(5.1056e+05, device='cuda:0'), 'acc': tensor(0.9768), 'kl': tensor(1.00000e+05 *
-       5.1055, device='cuda:0'), 'likelihood': tensor(-4.6615, device='cuda:0')}{'type': 'validation', 'epoch': 87, 'loss': tensor(1.00000e+06 *
-       1.5314, device='cuda:0'), 'acc': tensor(0.9757), 'kl': tensor(1.00000e+06 *
-       1.5314, device='cuda:0'), 'likelihood': tensor(-4., device='cuda:0')}{'type': 'train', 'epoch': 88, 'loss': tensor(1.00000e+05 *
-       5.1054, device='cuda:0'), 'acc': tensor(0.9811), 'kl': tensor(1.00000e+05 *
-       5.1054, device='cuda:0'), 'likelihood': tensor(-3.6823, device='cuda:0')}{'type': 'validation', 'epoch': 88, 'loss': tensor(1.00000e+06 *
-       1.5299, device='cuda:0'), 'acc': tensor(0.9800), 'kl': tensor(1.00000e+06 *
-       1.5299, device='cuda:0'), 'likelihood': tensor(-3.1250, device='cuda:0')}{'type': 'train', 'epoch': 89, 'loss': tensor(1.00000e+05 *
-       5.1034, device='cuda:0'), 'acc': tensor(0.9764), 'kl': tensor(1.00000e+05 *
-       5.1034, device='cuda:0'), 'likelihood': tensor(-4.7760, device='cuda:0')}{'type': 'validation', 'epoch': 89, 'loss': tensor(1.00000e+06 *
-       1.5309, device='cuda:0'), 'acc': tensor(0.9871), 'kl': tensor(1.00000e+06 *
-       1.5309, device='cuda:0'), 'likelihood': tensor(-3.5000, device='cuda:0')}{'type': 'train', 'epoch': 90, 'loss': tensor(1.00000e+05 *
-       5.1007, device='cuda:0'), 'acc': tensor(0.9783), 'kl': tensor(1.00000e+05 *
-       5.1007, device='cuda:0'), 'likelihood': tensor(-4.1875, device='cuda:0')}{'type': 'validation', 'epoch': 90, 'loss': tensor(1.00000e+06 *
-       1.5300, device='cuda:0'), 'acc': tensor(0.9814), 'kl': tensor(1.00000e+06 *
-       1.5300, device='cuda:0'), 'likelihood': tensor(-2.2500, device='cuda:0')}{'type': 'train', 'epoch': 91, 'loss': tensor(1.00000e+05 *
-       5.1039, device='cuda:0'), 'acc': tensor(0.9802), 'kl': tensor(5.1039e+05, device='cuda:0'), 'likelihood': tensor(-3.7188, device='cuda:0')}{'type': 'validation', 'epoch': 91, 'loss': tensor(1.00000e+06 *
+       1.5349, device='cuda:0'), 'likelihood': tensor(-4.7500, device='cuda:0')}{'type': 'train', 'epoch': 52, 'loss': tensor(1.00000e+05 *
+       5.1221, device='cuda:0'), 'acc': tensor(0.9752), 'kl': tensor(1.00000e+05 *
+       5.1221, device='cuda:0'), 'likelihood': tensor(-4.4271, device='cuda:0')}{'type': 'validation', 'epoch': 52, 'loss': tensor(1.00000e+06 *
+       1.5368, device='cuda:0'), 'acc': tensor(0.9800), 'kl': tensor(1.00000e+06 *
+       1.5368, device='cuda:0'), 'likelihood': tensor(-3.6250, device='cuda:0')}{'type': 'train', 'epoch': 53, 'loss': tensor(1.00000e+05 *
+       5.1239, device='cuda:0'), 'acc': tensor(0.9778), 'kl': tensor(1.00000e+05 *
+       5.1239, device='cuda:0'), 'likelihood': tensor(-3.9531, device='cuda:0')}{'type': 'validation', 'epoch': 53, 'loss': tensor(1.00000e+06 *
+       1.5359, device='cuda:0'), 'acc': tensor(0.9757), 'kl': tensor(1.00000e+06 *
+       1.5359, device='cuda:0'), 'likelihood': tensor(-4.3750, device='cuda:0')}{'type': 'train', 'epoch': 54, 'loss': tensor(1.00000e+05 *
+       5.1213, device='cuda:0'), 'acc': tensor(0.9787), 'kl': tensor(1.00000e+05 *
+       5.1212, device='cuda:0'), 'likelihood': tensor(-4.1510, device='cuda:0')}{'type': 'validation', 'epoch': 54, 'loss': tensor(1.00000e+06 *
+       1.5360, device='cuda:0'), 'acc': tensor(0.9714), 'kl': tensor(1.00000e+06 *
+       1.5360, device='cuda:0'), 'likelihood': tensor(-7.7500, device='cuda:0')}{'type': 'train', 'epoch': 55, 'loss': tensor(1.00000e+05 *
+       5.1209, device='cuda:0'), 'acc': tensor(0.9735), 'kl': tensor(1.00000e+05 *
+       5.1208, device='cuda:0'), 'likelihood': tensor(-4.9062, device='cuda:0')}{'type': 'validation', 'epoch': 55, 'loss': tensor(1.00000e+06 *
+       1.5368, device='cuda:0'), 'acc': tensor(0.9729), 'kl': tensor(1.00000e+06 *
+       1.5368, device='cuda:0'), 'likelihood': tensor(-3.7500, device='cuda:0')}{'type': 'train', 'epoch': 56, 'loss': tensor(1.00000e+05 *
+       5.1221, device='cuda:0'), 'acc': tensor(0.9786), 'kl': tensor(1.00000e+05 *
+       5.1221, device='cuda:0'), 'likelihood': tensor(-4.1615, device='cuda:0')}{'type': 'validation', 'epoch': 56, 'loss': tensor(1.00000e+06 *
+       1.5350, device='cuda:0'), 'acc': tensor(0.9771), 'kl': tensor(1.5350e+06, device='cuda:0'), 'likelihood': tensor(-2.8750, device='cuda:0')}{'type': 'train', 'epoch': 57, 'loss': tensor(1.00000e+05 *
+       5.1168, device='cuda:0'), 'acc': tensor(0.9787), 'kl': tensor(1.00000e+05 *
+       5.1168, device='cuda:0'), 'likelihood': tensor(-4.1406, device='cuda:0')}{'type': 'validation', 'epoch': 57, 'loss': tensor(1.00000e+06 *
+       1.5343, device='cuda:0'), 'acc': tensor(0.9743), 'kl': tensor(1.5343e+06, device='cuda:0'), 'likelihood': tensor(-3.3750, device='cuda:0')}{'type': 'train', 'epoch': 58, 'loss': tensor(1.00000e+05 *
+       5.1216, device='cuda:0'), 'acc': tensor(0.9755), 'kl': tensor(1.00000e+05 *
+       5.1215, device='cuda:0'), 'likelihood': tensor(-4.2917, device='cuda:0')}{'type': 'validation', 'epoch': 58, 'loss': tensor(1.00000e+06 *
+       1.5351, device='cuda:0'), 'acc': tensor(0.9800), 'kl': tensor(1.00000e+06 *
+       1.5351, device='cuda:0'), 'likelihood': tensor(-4.3750, device='cuda:0')}{'type': 'train', 'epoch': 59, 'loss': tensor(1.00000e+05 *
+       5.1165, device='cuda:0'), 'acc': tensor(0.9780), 'kl': tensor(1.00000e+05 *
+       5.1164, device='cuda:0'), 'likelihood': tensor(-3.8125, device='cuda:0')}{'type': 'validation', 'epoch': 59, 'loss': tensor(1.00000e+06 *
+       1.5357, device='cuda:0'), 'acc': tensor(0.9729), 'kl': tensor(1.00000e+06 *
+       1.5357, device='cuda:0'), 'likelihood': tensor(-3.2500, device='cuda:0')}{'type': 'train', 'epoch': 60, 'loss': tensor(1.00000e+05 *
+       5.1191, device='cuda:0'), 'acc': tensor(0.9794), 'kl': tensor(1.00000e+05 *
+       5.1191, device='cuda:0'), 'likelihood': tensor(-3.1094, device='cuda:0')}{'type': 'validation', 'epoch': 60, 'loss': tensor(1.00000e+06 *
+       1.5350, device='cuda:0'), 'acc': tensor(0.9700), 'kl': tensor(1.00000e+06 *
+       1.5350, device='cuda:0'), 'likelihood': tensor(-7.1250, device='cuda:0')}{'type': 'train', 'epoch': 61, 'loss': tensor(1.00000e+05 *
+       5.1164, device='cuda:0'), 'acc': tensor(0.9789), 'kl': tensor(1.00000e+05 *
+       5.1163, device='cuda:0'), 'likelihood': tensor(-3.6458, device='cuda:0')}{'type': 'validation', 'epoch': 61, 'loss': tensor(1.00000e+06 *
+       1.5331, device='cuda:0'), 'acc': tensor(0.9800), 'kl': tensor(1.00000e+06 *
+       1.5331, device='cuda:0'), 'likelihood': tensor(-3.6250, device='cuda:0')}{'type': 'train', 'epoch': 62, 'loss': tensor(1.00000e+05 *
+       5.1161, device='cuda:0'), 'acc': tensor(0.9808), 'kl': tensor(1.00000e+05 *
+       5.1160, device='cuda:0'), 'likelihood': tensor(-3.5365, device='cuda:0')}{'type': 'validation', 'epoch': 62, 'loss': tensor(1.00000e+06 *
+       1.5350, device='cuda:0'), 'acc': tensor(0.9871), 'kl': tensor(1.00000e+06 *
+       1.5350, device='cuda:0'), 'likelihood': tensor(-3.2500, device='cuda:0')}{'type': 'train', 'epoch': 63, 'loss': tensor(1.00000e+05 *
+       5.1143, device='cuda:0'), 'acc': tensor(0.9819), 'kl': tensor(1.00000e+05 *
+       5.1142, device='cuda:0'), 'likelihood': tensor(-3.4375, device='cuda:0')}{'type': 'validation', 'epoch': 63, 'loss': tensor(1.00000e+06 *
+       1.5344, device='cuda:0'), 'acc': tensor(0.9657), 'kl': tensor(1.5344e+06, device='cuda:0'), 'likelihood': tensor(-4.7500, device='cuda:0')}{'type': 'train', 'epoch': 64, 'loss': tensor(1.00000e+05 *
+       5.1139, device='cuda:0'), 'acc': tensor(0.9808), 'kl': tensor(1.00000e+05 *
+       5.1139, device='cuda:0'), 'likelihood': tensor(-3.0677, device='cuda:0')}{'type': 'validation', 'epoch': 64, 'loss': tensor(1.00000e+06 *
+       1.5328, device='cuda:0'), 'acc': tensor(0.9871), 'kl': tensor(1.00000e+06 *
+       1.5328, device='cuda:0'), 'likelihood': tensor(-1.7500, device='cuda:0')}{'type': 'train', 'epoch': 65, 'loss': tensor(1.00000e+05 *
+       5.1142, device='cuda:0'), 'acc': tensor(0.9805), 'kl': tensor(1.00000e+05 *
+       5.1141, device='cuda:0'), 'likelihood': tensor(-3.4010, device='cuda:0')}{'type': 'validation', 'epoch': 65, 'loss': tensor(1.00000e+06 *
+       1.5350, device='cuda:0'), 'acc': tensor(0.9771), 'kl': tensor(1.00000e+06 *
+       1.5350, device='cuda:0'), 'likelihood': tensor(-3.5000, device='cuda:0')}{'type': 'train', 'epoch': 66, 'loss': tensor(1.00000e+05 *
+       5.1116, device='cuda:0'), 'acc': tensor(0.9817), 'kl': tensor(1.00000e+05 *
+       5.1116, device='cuda:0'), 'likelihood': tensor(-3.2083, device='cuda:0')}{'type': 'validation', 'epoch': 66, 'loss': tensor(1.00000e+06 *
+       1.5355, device='cuda:0'), 'acc': tensor(0.9829), 'kl': tensor(1.00000e+06 *
+       1.5355, device='cuda:0'), 'likelihood': tensor(-3.2500, device='cuda:0')}{'type': 'train', 'epoch': 67, 'loss': tensor(1.00000e+05 *
+       5.1146, device='cuda:0'), 'acc': tensor(0.9833), 'kl': tensor(1.00000e+05 *
+       5.1146, device='cuda:0'), 'likelihood': tensor(-2.8281, device='cuda:0')}{'type': 'validation', 'epoch': 67, 'loss': tensor(1.00000e+06 *
+       1.5333, device='cuda:0'), 'acc': tensor(0.9800), 'kl': tensor(1.00000e+06 *
+       1.5333, device='cuda:0'), 'likelihood': tensor(-3.6250, device='cuda:0')}{'type': 'train', 'epoch': 68, 'loss': tensor(1.00000e+05 *
+       5.1151, device='cuda:0'), 'acc': tensor(0.9822), 'kl': tensor(1.00000e+05 *
+       5.1150, device='cuda:0'), 'likelihood': tensor(-2.8021, device='cuda:0')}{'type': 'validation', 'epoch': 68, 'loss': tensor(1.5336e+06, device='cuda:0'), 'acc': tensor(0.9857), 'kl': tensor(1.5336e+06, device='cuda:0'), 'likelihood': tensor(-4., device='cuda:0')}{'type': 'train', 'epoch': 69, 'loss': tensor(1.00000e+05 *
+       5.1132, device='cuda:0'), 'acc': tensor(0.9862), 'kl': tensor(1.00000e+05 *
+       5.1132, device='cuda:0'), 'likelihood': tensor(-2.2708, device='cuda:0')}{'type': 'validation', 'epoch': 69, 'loss': tensor(1.00000e+06 *
+       1.5329, device='cuda:0'), 'acc': tensor(0.9729), 'kl': tensor(1.5329e+06, device='cuda:0'), 'likelihood': tensor(-3.6250, device='cuda:0')}{'type': 'train', 'epoch': 70, 'loss': tensor(1.00000e+05 *
+       5.1104, device='cuda:0'), 'acc': tensor(0.9809), 'kl': tensor(1.00000e+05 *
+       5.1104, device='cuda:0'), 'likelihood': tensor(-3.5781, device='cuda:0')}{'type': 'validation', 'epoch': 70, 'loss': tensor(1.00000e+06 *
+       1.5326, device='cuda:0'), 'acc': tensor(0.9900), 'kl': tensor(1.00000e+06 *
+       1.5326, device='cuda:0'), 'likelihood': tensor(-1.2500, device='cuda:0')}{'type': 'train', 'epoch': 71, 'loss': tensor(1.00000e+05 *
+       5.1110, device='cuda:0'), 'acc': tensor(0.9848), 'kl': tensor(1.00000e+05 *
+       5.1110, device='cuda:0'), 'likelihood': tensor(-2.1979, device='cuda:0')}{'type': 'validation', 'epoch': 71, 'loss': tensor(1.00000e+06 *
+       1.5344, device='cuda:0'), 'acc': tensor(0.9871), 'kl': tensor(1.5344e+06, device='cuda:0'), 'likelihood': tensor(-1.7500, device='cuda:0')}{'type': 'train', 'epoch': 72, 'loss': tensor(1.00000e+05 *
+       5.1096, device='cuda:0'), 'acc': tensor(0.9841), 'kl': tensor(1.00000e+05 *
+       5.1096, device='cuda:0'), 'likelihood': tensor(-2.5521, device='cuda:0')}{'type': 'validation', 'epoch': 72, 'loss': tensor(1.00000e+06 *
+       1.5341, device='cuda:0'), 'acc': tensor(0.9829), 'kl': tensor(1.00000e+06 *
+       1.5341, device='cuda:0'), 'likelihood': tensor(-3.2500, device='cuda:0')}{'type': 'train', 'epoch': 73, 'loss': tensor(1.00000e+05 *
+       5.1051, device='cuda:0'), 'acc': tensor(0.9857), 'kl': tensor(1.00000e+05 *
+       5.1051, device='cuda:0'), 'likelihood': tensor(-2.0521, device='cuda:0')}{'type': 'validation', 'epoch': 73, 'loss': tensor(1.00000e+06 *
+       1.5326, device='cuda:0'), 'acc': tensor(0.9786), 'kl': tensor(1.00000e+06 *
+       1.5326, device='cuda:0'), 'likelihood': tensor(-3.5000, device='cuda:0')}{'type': 'train', 'epoch': 74, 'loss': tensor(1.00000e+05 *
+       5.1131, device='cuda:0'), 'acc': tensor(0.9841), 'kl': tensor(1.00000e+05 *
+       5.1131, device='cuda:0'), 'likelihood': tensor(-2.7083, device='cuda:0')}{'type': 'validation', 'epoch': 74, 'loss': tensor(1.5328e+06, device='cuda:0'), 'acc': tensor(0.9943), 'kl': tensor(1.00000e+06 *
+       1.5328, device='cuda:0'), 'likelihood': tensor(-0.2500, device='cuda:0')}{'type': 'train', 'epoch': 75, 'loss': tensor(1.00000e+05 *
+       5.1104, device='cuda:0'), 'acc': tensor(0.9879), 'kl': tensor(1.00000e+05 *
+       5.1104, device='cuda:0'), 'likelihood': tensor(-1.9323, device='cuda:0')}{'type': 'validation', 'epoch': 75, 'loss': tensor(1.00000e+06 *
+       1.5326, device='cuda:0'), 'acc': tensor(0.9886), 'kl': tensor(1.00000e+06 *
+       1.5326, device='cuda:0'), 'likelihood': tensor(-0.8750, device='cuda:0')}{'type': 'train', 'epoch': 76, 'loss': tensor(1.00000e+05 *
+       5.1080, device='cuda:0'), 'acc': tensor(0.9876), 'kl': tensor(1.00000e+05 *
+       5.1080, device='cuda:0'), 'likelihood': tensor(-1.6875, device='cuda:0')}{'type': 'validation', 'epoch': 76, 'loss': tensor(1.00000e+06 *
+       1.5325, device='cuda:0'), 'acc': tensor(0.9814), 'kl': tensor(1.00000e+06 *
+       1.5325, device='cuda:0'), 'likelihood': tensor(-3.2500, device='cuda:0')}{'type': 'train', 'epoch': 77, 'loss': tensor(1.00000e+05 *
+       5.1080, device='cuda:0'), 'acc': tensor(0.9860), 'kl': tensor(1.00000e+05 *
+       5.1080, device='cuda:0'), 'likelihood': tensor(-2.2604, device='cuda:0')}{'type': 'validation', 'epoch': 77, 'loss': tensor(1.00000e+06 *
+       1.5306, device='cuda:0'), 'acc': tensor(0.9843), 'kl': tensor(1.00000e+06 *
+       1.5306, device='cuda:0'), 'likelihood': tensor(-3.2500, device='cuda:0')}{'type': 'train', 'epoch': 78, 'loss': tensor(1.00000e+05 *
+       5.1129, device='cuda:0'), 'acc': tensor(0.9869), 'kl': tensor(1.00000e+05 *
+       5.1129, device='cuda:0'), 'likelihood': tensor(-2.3073, device='cuda:0')}{'type': 'validation', 'epoch': 78, 'loss': tensor(1.00000e+06 *
+       1.5311, device='cuda:0'), 'acc': tensor(0.9871), 'kl': tensor(1.00000e+06 *
+       1.5311, device='cuda:0'), 'likelihood': tensor(-1.8750, device='cuda:0')}{'type': 'train', 'epoch': 79, 'loss': tensor(1.00000e+05 *
+       5.1062, device='cuda:0'), 'acc': tensor(0.9874), 'kl': tensor(1.00000e+05 *
+       5.1061, device='cuda:0'), 'likelihood': tensor(-2.3490, device='cuda:0')}{'type': 'validation', 'epoch': 79, 'loss': tensor(1.00000e+06 *
+       1.5324, device='cuda:0'), 'acc': tensor(0.9871), 'kl': tensor(1.00000e+06 *
+       1.5324, device='cuda:0'), 'likelihood': tensor(-1.7500, device='cuda:0')}{'type': 'train', 'epoch': 80, 'loss': tensor(5.1074e+05, device='cuda:0'), 'acc': tensor(0.9881), 'kl': tensor(5.1073e+05, device='cuda:0'), 'likelihood': tensor(-1.9948, device='cuda:0')}{'type': 'validation', 'epoch': 80, 'loss': tensor(1.00000e+06 *
+       1.5333, device='cuda:0'), 'acc': tensor(0.9829), 'kl': tensor(1.00000e+06 *
+       1.5333, device='cuda:0'), 'likelihood': tensor(-2.5000, device='cuda:0')}{'type': 'train', 'epoch': 81, 'loss': tensor(1.00000e+05 *
+       5.1047, device='cuda:0'), 'acc': tensor(0.9870), 'kl': tensor(1.00000e+05 *
+       5.1047, device='cuda:0'), 'likelihood': tensor(-2.2031, device='cuda:0')}{'type': 'validation', 'epoch': 81, 'loss': tensor(1.00000e+06 *
+       1.5327, device='cuda:0'), 'acc': tensor(0.9943), 'kl': tensor(1.00000e+06 *
+       1.5327, device='cuda:0'), 'likelihood': tensor(-0.8750, device='cuda:0')}{'type': 'train', 'epoch': 82, 'loss': tensor(1.00000e+05 *
+       5.1031, device='cuda:0'), 'acc': tensor(0.9882), 'kl': tensor(1.00000e+05 *
+       5.1031, device='cuda:0'), 'likelihood': tensor(-1.8229, device='cuda:0')}{'type': 'validation', 'epoch': 82, 'loss': tensor(1.5309e+06, device='cuda:0'), 'acc': tensor(0.9843), 'kl': tensor(1.00000e+06 *
+       1.5309, device='cuda:0'), 'likelihood': tensor(-2.6250, device='cuda:0')}{'type': 'train', 'epoch': 83, 'loss': tensor(1.00000e+05 *
+       5.1050, device='cuda:0'), 'acc': tensor(0.9870), 'kl': tensor(1.00000e+05 *
+       5.1050, device='cuda:0'), 'likelihood': tensor(-2.3073, device='cuda:0')}{'type': 'validation', 'epoch': 83, 'loss': tensor(1.5315e+06, device='cuda:0'), 'acc': tensor(0.9914), 'kl': tensor(1.00000e+06 *
+       1.5315, device='cuda:0'), 'likelihood': tensor(-1.1250, device='cuda:0')}{'type': 'train', 'epoch': 84, 'loss': tensor(1.00000e+05 *
+       5.1058, device='cuda:0'), 'acc': tensor(0.9882), 'kl': tensor(1.00000e+05 *
+       5.1058, device='cuda:0'), 'likelihood': tensor(-1.5990, device='cuda:0')}{'type': 'validation', 'epoch': 84, 'loss': tensor(1.00000e+06 *
        1.5320, device='cuda:0'), 'acc': tensor(0.9871), 'kl': tensor(1.00000e+06 *
-       1.5320, device='cuda:0'), 'likelihood': tensor(-1.7500, device='cuda:0')}{'type': 'train', 'epoch': 92, 'loss': tensor(1.00000e+05 *
-       5.0994, device='cuda:0'), 'acc': tensor(0.9810), 'kl': tensor(5.0993e+05, device='cuda:0'), 'likelihood': tensor(-4.5677, device='cuda:0')}{'type': 'validation', 'epoch': 92, 'loss': tensor(1.5309e+06, device='cuda:0'), 'acc': tensor(0.9743), 'kl': tensor(1.00000e+06 *
-       1.5309, device='cuda:0'), 'likelihood': tensor(-3.5000, device='cuda:0')}{'type': 'train', 'epoch': 93, 'loss': tensor(1.00000e+05 *
-       5.1039, device='cuda:0'), 'acc': tensor(0.9823), 'kl': tensor(1.00000e+05 *
-       5.1039, device='cuda:0'), 'likelihood': tensor(-2.8750, device='cuda:0')}{'type': 'validation', 'epoch': 93, 'loss': tensor(1.00000e+06 *
-       1.5293, device='cuda:0'), 'acc': tensor(0.9829), 'kl': tensor(1.00000e+06 *
-       1.5293, device='cuda:0'), 'likelihood': tensor(-2., device='cuda:0')}{'type': 'train', 'epoch': 94, 'loss': tensor(1.00000e+05 *
-       5.1002, device='cuda:0'), 'acc': tensor(0.9824), 'kl': tensor(1.00000e+05 *
-       5.1002, device='cuda:0'), 'likelihood': tensor(-2.9062, device='cuda:0')}{'type': 'validation', 'epoch': 94, 'loss': tensor(1.00000e+06 *
-       1.5307, device='cuda:0'), 'acc': tensor(0.9786), 'kl': tensor(1.00000e+06 *
-       1.5307, device='cuda:0'), 'likelihood': tensor(-3.3750, device='cuda:0')}{'type': 'train', 'epoch': 95, 'loss': tensor(1.00000e+05 *
-       5.1037, device='cuda:0'), 'acc': tensor(0.9815), 'kl': tensor(1.00000e+05 *
-       5.1037, device='cuda:0'), 'likelihood': tensor(-3.1250, device='cuda:0')}{'type': 'validation', 'epoch': 95, 'loss': tensor(1.00000e+06 *
-       1.5293, device='cuda:0'), 'acc': tensor(0.9871), 'kl': tensor(1.00000e+06 *
-       1.5293, device='cuda:0'), 'likelihood': tensor(-3.3750, device='cuda:0')}{'type': 'train', 'epoch': 96, 'loss': tensor(1.00000e+05 *
-       5.0991, device='cuda:0'), 'acc': tensor(0.9822), 'kl': tensor(1.00000e+05 *
-       5.0990, device='cuda:0'), 'likelihood': tensor(-3.4010, device='cuda:0')}{'type': 'validation', 'epoch': 96, 'loss': tensor(1.00000e+06 *
-       1.5299, device='cuda:0'), 'acc': tensor(0.9800), 'kl': tensor(1.00000e+06 *
-       1.5299, device='cuda:0'), 'likelihood': tensor(-4.2500, device='cuda:0')}{'type': 'train', 'epoch': 97, 'loss': tensor(1.00000e+05 *
-       5.1007, device='cuda:0'), 'acc': tensor(0.9809), 'kl': tensor(1.00000e+05 *
-       5.1006, device='cuda:0'), 'likelihood': tensor(-3.7917, device='cuda:0')}{'type': 'validation', 'epoch': 97, 'loss': tensor(1.00000e+06 *
-       1.5293, device='cuda:0'), 'acc': tensor(0.9800), 'kl': tensor(1.5293e+06, device='cuda:0'), 'likelihood': tensor(-3.5000, device='cuda:0')}{'type': 'train', 'epoch': 98, 'loss': tensor(1.00000e+05 *
-       5.0977, device='cuda:0'), 'acc': tensor(0.9822), 'kl': tensor(1.00000e+05 *
-       5.0977, device='cuda:0'), 'likelihood': tensor(-3.8177, device='cuda:0')}{'type': 'validation', 'epoch': 98, 'loss': tensor(1.00000e+06 *
-       1.5288, device='cuda:0'), 'acc': tensor(0.9771), 'kl': tensor(1.00000e+06 *
-       1.5288, device='cuda:0'), 'likelihood': tensor(-4., device='cuda:0')}{'type': 'train', 'epoch': 99, 'loss': tensor(1.00000e+05 *
-       5.0981, device='cuda:0'), 'acc': tensor(0.9814), 'kl': tensor(1.00000e+05 *
-       5.0981, device='cuda:0'), 'likelihood': tensor(-3.9375, device='cuda:0')}{'type': 'validation', 'epoch': 99, 'loss': tensor(1.00000e+06 *
-       1.5302, device='cuda:0'), 'acc': tensor(0.9857), 'kl': tensor(1.00000e+06 *
-       1.5302, device='cuda:0'), 'likelihood': tensor(-1.7500, device='cuda:0')}
+       1.5320, device='cuda:0'), 'likelihood': tensor(-2., device='cuda:0')}{'type': 'train', 'epoch': 85, 'loss': tensor(1.00000e+05 *
+       5.1001, device='cuda:0'), 'acc': tensor(0.9884), 'kl': tensor(1.00000e+05 *
+       5.1001, device='cuda:0'), 'likelihood': tensor(-1.5625, device='cuda:0')}{'type': 'validation', 'epoch': 85, 'loss': tensor(1.00000e+06 *
+       1.5312, device='cuda:0'), 'acc': tensor(0.9829), 'kl': tensor(1.5312e+06, device='cuda:0'), 'likelihood': tensor(-2.6250, device='cuda:0')}{'type': 'train', 'epoch': 86, 'loss': tensor(1.00000e+05 *
+       5.1030, device='cuda:0'), 'acc': tensor(0.9887), 'kl': tensor(1.00000e+05 *
+       5.1030, device='cuda:0'), 'likelihood': tensor(-1.9167, device='cuda:0')}{'type': 'validation', 'epoch': 86, 'loss': tensor(1.5302e+06, device='cuda:0'), 'acc': tensor(0.9943), 'kl': tensor(1.00000e+06 *
+       1.5302, device='cuda:0'), 'likelihood': tensor(-1.1250, device='cuda:0')}{'type': 'train', 'epoch': 87, 'loss': tensor(1.00000e+05 *
+       5.1001, device='cuda:0'), 'acc': tensor(0.9892), 'kl': tensor(1.00000e+05 *
+       5.1001, device='cuda:0'), 'likelihood': tensor(-1.8333, device='cuda:0')}{'type': 'validation', 'epoch': 87, 'loss': tensor(1.00000e+06 *
+       1.5319, device='cuda:0'), 'acc': tensor(0.9943), 'kl': tensor(1.00000e+06 *
+       1.5319, device='cuda:0'), 'likelihood': tensor(-0.6250, device='cuda:0')}{'type': 'train', 'epoch': 88, 'loss': tensor(1.00000e+05 *
+       5.1024, device='cuda:0'), 'acc': tensor(0.9881), 'kl': tensor(1.00000e+05 *
+       5.1023, device='cuda:0'), 'likelihood': tensor(-1.8750, device='cuda:0')}{'type': 'validation', 'epoch': 88, 'loss': tensor(1.00000e+06 *
+       1.5315, device='cuda:0'), 'acc': tensor(0.9857), 'kl': tensor(1.00000e+06 *
+       1.5315, device='cuda:0'), 'likelihood': tensor(-3.5000, device='cuda:0')}{'type': 'train', 'epoch': 89, 'loss': tensor(1.00000e+05 *
+       5.1020, device='cuda:0'), 'acc': tensor(0.9916), 'kl': tensor(1.00000e+05 *
+       5.1020, device='cuda:0'), 'likelihood': tensor(-1.3073, device='cuda:0')}{'type': 'validation', 'epoch': 89, 'loss': tensor(1.00000e+06 *
+       1.5301, device='cuda:0'), 'acc': tensor(0.9914), 'kl': tensor(1.00000e+06 *
+       1.5301, device='cuda:0'), 'likelihood': tensor(-1.1250, device='cuda:0')}{'type': 'train', 'epoch': 90, 'loss': tensor(1.00000e+05 *
+       5.1002, device='cuda:0'), 'acc': tensor(0.9905), 'kl': tensor(1.00000e+05 *
+       5.1002, device='cuda:0'), 'likelihood': tensor(-1.3385, device='cuda:0')}{'type': 'validation', 'epoch': 90, 'loss': tensor(1.00000e+06 *
+       1.5323, device='cuda:0'), 'acc': tensor(0.9900), 'kl': tensor(1.00000e+06 *
+       1.5323, device='cuda:0'), 'likelihood': tensor(-1.6250, device='cuda:0')}{'type': 'train', 'epoch': 91, 'loss': tensor(1.00000e+05 *
+       5.0987, device='cuda:0'), 'acc': tensor(0.9901), 'kl': tensor(5.0987e+05, device='cuda:0'), 'likelihood': tensor(-1.5625, device='cuda:0')}{'type': 'validation', 'epoch': 91, 'loss': tensor(1.00000e+06 *
+       1.5294, device='cuda:0'), 'acc': tensor(0.9971), 'kl': tensor(1.00000e+06 *
+       1.5294, device='cuda:0'), 'likelihood': tensor(-0.7500, device='cuda:0')}{'type': 'train', 'epoch': 92, 'loss': tensor(1.00000e+05 *
+       5.1020, device='cuda:0'), 'acc': tensor(0.9907), 'kl': tensor(1.00000e+05 *
+       5.1020, device='cuda:0'), 'likelihood': tensor(-1.5781, device='cuda:0')}{'type': 'validation', 'epoch': 92, 'loss': tensor(1.00000e+06 *
+       1.5305, device='cuda:0'), 'acc': tensor(0.9871), 'kl': tensor(1.00000e+06 *
+       1.5305, device='cuda:0'), 'likelihood': tensor(-2., device='cuda:0')}{'type': 'train', 'epoch': 93, 'loss': tensor(1.00000e+05 *
+       5.1007, device='cuda:0'), 'acc': tensor(0.9885), 'kl': tensor(1.00000e+05 *
+       5.1007, device='cuda:0'), 'likelihood': tensor(-2.3229, device='cuda:0')}{'type': 'validation', 'epoch': 93, 'loss': tensor(1.00000e+06 *
+       1.5305, device='cuda:0'), 'acc': tensor(0.9871), 'kl': tensor(1.00000e+06 *
+       1.5305, device='cuda:0'), 'likelihood': tensor(-2.6250, device='cuda:0')}{'type': 'train', 'epoch': 94, 'loss': tensor(1.00000e+05 *
+       5.0986, device='cuda:0'), 'acc': tensor(0.9896), 'kl': tensor(1.00000e+05 *
+       5.0986, device='cuda:0'), 'likelihood': tensor(-1.5156, device='cuda:0')}{'type': 'validation', 'epoch': 94, 'loss': tensor(1.00000e+06 *
+       1.5293, device='cuda:0'), 'acc': tensor(0.9900), 'kl': tensor(1.00000e+06 *
+       1.5293, device='cuda:0'), 'likelihood': tensor(-1.2500, device='cuda:0')}{'type': 'train', 'epoch': 95, 'loss': tensor(1.00000e+05 *
+       5.0993, device='cuda:0'), 'acc': tensor(0.9901), 'kl': tensor(1.00000e+05 *
+       5.0993, device='cuda:0'), 'likelihood': tensor(-1.6823, device='cuda:0')}{'type': 'validation', 'epoch': 95, 'loss': tensor(1.00000e+06 *
+       1.5303, device='cuda:0'), 'acc': tensor(0.9943), 'kl': tensor(1.00000e+06 *
+       1.5303, device='cuda:0'), 'likelihood': tensor(-0.7500, device='cuda:0')}{'type': 'train', 'epoch': 96, 'loss': tensor(1.00000e+05 *
+       5.1017, device='cuda:0'), 'acc': tensor(0.9919), 'kl': tensor(1.00000e+05 *
+       5.1017, device='cuda:0'), 'likelihood': tensor(-1.1354, device='cuda:0')}{'type': 'validation', 'epoch': 96, 'loss': tensor(1.00000e+06 *
+       1.5280, device='cuda:0'), 'acc': tensor(0.9957), 'kl': tensor(1.00000e+06 *
+       1.5280, device='cuda:0'), 'likelihood': tensor(-1.2500, device='cuda:0')}{'type': 'train', 'epoch': 97, 'loss': tensor(5.0992e+05, device='cuda:0'), 'acc': tensor(0.9916), 'kl': tensor(1.00000e+05 *
+       5.0992, device='cuda:0'), 'likelihood': tensor(-1.2604, device='cuda:0')}{'type': 'validation', 'epoch': 97, 'loss': tensor(1.00000e+06 *
+       1.5301, device='cuda:0'), 'acc': tensor(0.9914), 'kl': tensor(1.00000e+06 *
+       1.5301, device='cuda:0'), 'likelihood': tensor(-1.3750, device='cuda:0')}{'type': 'train', 'epoch': 98, 'loss': tensor(1.00000e+05 *
+       5.0953, device='cuda:0'), 'acc': tensor(0.9915), 'kl': tensor(1.00000e+05 *
+       5.0953, device='cuda:0'), 'likelihood': tensor(-1.3438, device='cuda:0')}{'type': 'validation', 'epoch': 98, 'loss': tensor(1.00000e+06 *
+       1.5305, device='cuda:0'), 'acc': tensor(0.9943), 'kl': tensor(1.00000e+06 *
+       1.5305, device='cuda:0'), 'likelihood': tensor(-2., device='cuda:0')}{'type': 'train', 'epoch': 99, 'loss': tensor(1.00000e+05 *
+       5.0971, device='cuda:0'), 'acc': tensor(0.9917), 'kl': tensor(1.00000e+05 *
+       5.0970, device='cuda:0'), 'likelihood': tensor(-1.5521, device='cuda:0')}{'type': 'validation', 'epoch': 99, 'loss': tensor(1.00000e+06 *
+       1.5299, device='cuda:0'), 'acc': tensor(0.9886), 'kl': tensor(1.00000e+06 *
+       1.5299, device='cuda:0'), 'likelihood': tensor(-1.7500, device='cuda:0')}
