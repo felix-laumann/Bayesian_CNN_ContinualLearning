@@ -46,7 +46,7 @@ elif dataset is 'CIFAR-10':    # train with CIFAR-10
 elif dataset is 'CIFAR-100':    # train with CIFAR-100
     outputs = 100
     inputs = 3
-elif dataset is 'ImageNet':    # train with 3 ImageNet classes
+elif dataset is 'CIFAR-100-classes':    # train with 3 CIFAR-100-classes classes
     outputs = 3
     inputs = 3
 
@@ -78,11 +78,11 @@ elif dataset is 'CIFAR-10':
     train_dataset = dsets.CIFAR10(root="data", download=True, transform=transform)
     val_dataset = dsets.CIFAR10(root="data", download=True, train=False, transform=transform)
 
-elif dataset is 'ImageNet':
+elif dataset is 'CIFAR-100-classes':
     transform = transforms.Compose([transforms.Resize((resize, resize)), transforms.ToTensor(),
                                     transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
-    train_dataset = dsets.ImageFolder(root="/home/felix/PycharmProjects/MasterProject/data/ImageNet/similar/n02122298/train/", transform=transform)
-    val_dataset = dsets.ImageFolder(root="/home/felix/PycharmProjects/MasterProject/data/ImageNet/similar/n02122298/val/", transform=transform)
+    train_dataset = dsets.ImageFolder(root="/home/felix/PycharmProjects/MasterProject/data/CIFAR-100-classes/similar/n02122298/train/", transform=transform)
+    val_dataset = dsets.ImageFolder(root="/home/felix/PycharmProjects/MasterProject/data/CIFAR-100-classes/similar/n02122298/val/", transform=transform)
 
 '''
 MAKING DATASET ITERABLE

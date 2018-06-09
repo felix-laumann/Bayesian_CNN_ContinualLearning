@@ -2,13 +2,11 @@ import os
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-plt.style.use("seaborn")
+plt.style.use("seaborn-whitegrid")
 import re
 import numpy as np
-plt.rc('font', family='serif', size=16)
-plt.rcParams.update({'xtick.labelsize': 16, 'ytick.labelsize': 16, 'axes.labelsize': 16})
-
-tasks = 2  # tasks continually learnt
+plt.rc('font', family='serif', size=32)
+plt.rcParams.update({'xtick.labelsize': 32, 'ytick.labelsize': 32, 'axes.labelsize': 32})
 
 os.chdir("/home/felix/Dropbox/publications/Bayesian_CNN_continual/results/")
 
@@ -66,13 +64,13 @@ with open("diagnostics_4_eval.txt", 'r') as file:
 
 valid_4_eval = np.array(valid_4_eval).astype(np.float32)
 """
-f = plt.figure(figsize=(10, 8))
+f = plt.figure(figsize=(20, 16))
 
-plt.plot(valid_1, "--", label=r"Validation, prior: $U(a, b)$", color='maroon')
-plt.plot(valid_2, "--", label=r"Validation, prior: $q(w | \theta_A)$", color='navy')
-plt.plot(valid_2_eval, "--", label=r"Validation task A after training task B", color='#89c765')
-plt.plot(valid_3, "--", label=r"Validation, prior: $q(w | \theta_B)$", color='peru')
-plt.plot(valid_3_eval, "--", label=r"Validation task B after training task C", color='m')
+plt.plot(valid_1, label=r"Validation, prior: $U(a, b)$", color='maroon')
+plt.plot(valid_2, label=r"Validation, prior: $q(w | \theta_A)$", color='darkblue')
+plt.plot(valid_2_eval, label=r"Validation task A after training task B", color='#89c765')
+plt.plot(valid_3, label=r"Validation, prior: $q(w | \theta_B)$", color='peru')
+plt.plot(valid_3_eval, label=r"Validation task B after training task C", color='m')
 #plt.plot(valid_4, "--", label=r"Validation, prior: $q(w | \theta_C)$", color='gray')
 #plt.plot(valid_4_eval, "--", label=r"Validation task C after training task D", color='black')
 
@@ -82,6 +80,6 @@ plt.ylabel("Accuracy")
 x_ticks = range(len(valid_1))
 plt.xticks(x_ticks[9::10], map(lambda x: x+1, x_ticks[9::10]))
 
-plt.legend(loc=5)
+plt.legend(loc=5, fontsize=28)
 
-plt.savefig("results_continual.png")
+plt.savefig("results_continual.png", linewidth=10.0)
