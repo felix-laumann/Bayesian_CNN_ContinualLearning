@@ -22,7 +22,7 @@ if pretrained is False:
     noise = 0
 elif pretrained is True:
     task = 2  # change to 3, 4, 5, etc. for more tasks
-    noise = 0  # add extent of Gaussian noise
+    noise = 0.025  # add extent of Gaussian noise
 
 num_samples = 10  # because of Casper's trick
 batch_size = 32
@@ -82,8 +82,8 @@ elif dataset is 'CIFAR-10':
 elif dataset is 'CIFAR-100-classes':
     transform = transforms.Compose([transforms.Resize((resize, resize)), transforms.ToTensor(),
                                     transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
-    train_dataset = dsets.ImageFolder(root="/home/felix/PycharmProjects/MasterProject/data/CIFAR-100-classes/similar/n02122298/train/", transform=transform)
-    val_dataset = dsets.ImageFolder(root="/home/felix/PycharmProjects/MasterProject/data/CIFAR-100-classes/similar/n02122298/val/", transform=transform)
+    train_dataset = dsets.ImageFolder(root="./similar/leopards/train/", transform=transform)
+    val_dataset = dsets.ImageFolder(root="./similar/leopards/val/", transform=transform)
 
 '''
 MAKING DATASET ITERABLE
