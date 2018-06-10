@@ -22,7 +22,7 @@ if pretrained is False:
     noise = 0
 elif pretrained is True:
     task = 2  # change to 3, 4, 5, etc. for more tasks
-    noise = 0.025  # add extent of Gaussian noise
+    noise = 0  # add extent of Gaussian noise
 
 num_samples = 10  # because of Casper's trick
 batch_size = 32
@@ -62,6 +62,7 @@ LOADING DATASET
 
 if dataset is 'MNIST':
     transform = transforms.Compose([transforms.Resize((resize, resize)), transforms.ToTensor(),
+                                    transforms.Lambda(lambda x: x + noise * torch.randn(x.size())),
                                     transforms.Normalize((0.1307,), (0.3081,))])
     train_dataset = dsets.MNIST(root="data", download=True, transform=transform)
     val_dataset = dsets.MNIST(root="data", download=True, train=False, transform=transform)
