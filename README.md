@@ -10,5 +10,17 @@
 5. `is_training = False`, `pretrained = True`, `task = 3`
 6. (and so on for as many tasks as you want)
 
+### how we transfer parameters
+
+![posterior of task A = prior of task B](figures/dist_taskA_taskB.png)
+
+### Results
+
+![Results on permutations on MNIST](figures/results_continual_conv.png)
+
+![Results on *similar* CIFAR-100 classes ("leopards", "tigers", "lions").](figures/results_similar.png)
+
+![Results on *dissimilar* CIFAR-100 classes ("leopards", "palms", "bicycles").](figures/results_dissimilar.png)
+
 
 [Bayesian CNN repository](https://github.com/felix-laumann/Bayesian_CNN)
