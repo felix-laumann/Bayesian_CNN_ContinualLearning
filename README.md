@@ -16,11 +16,14 @@
 
 ### Results
 
+#### Results on permutations on MNIST
 ![Results on permutations on MNIST](figures/results_continual_conv.png)
 
-![Results on *similar* CIFAR-100 classes ("leopards", "tigers", "lions").](figures/results_similar.png)
+#### Results on *similar* CIFAR-100 classes ("leopards", "tigers", "lions")
+![Results on *similar* CIFAR-100 classes ("leopards", "tigers", "lions")](figures/results_similar.png)
 
-![Results on *dissimilar* CIFAR-100 classes ("leopards", "palms", "bicycles").](figures/results_dissimilar.png)
+#### Results on *dissimilar* CIFAR-100 classes ("leopards", "palms", "bicycles")
+![Results on *dissimilar* CIFAR-100 classes ("leopards", "palms", "bicycles")](figures/results_dissimilar.png)
 
 
 [Bayesian CNN repository](https://github.com/felix-laumann/Bayesian_CNN)
